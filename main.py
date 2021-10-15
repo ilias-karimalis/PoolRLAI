@@ -8,6 +8,18 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+import numpy as np
+
+
+"""
+<<<<<
+TODO:
+>>>>>
+
+1. Write DeConv component of World Model Net
+
+"""
+
 def main(rom_name, record_dir):
 
     ### Torch Trolling
@@ -70,46 +82,89 @@ def main(rom_name, record_dir):
 # Forms the (4, 3, 210, 160) dimensional tensor which serves as an input to our CNN
 def stackedFrames(ale, itter, last_frames):
 
-    frame_tensor = torch.Tensor(ale.getScreenRGB()).permute([2, 0, 1])
+    frame_tensor = torch.Tensor(preProcessFrame(ale.getScreenRGB())).permute([2, 0, 1])
     frame_tensor = torch.unsqueeze(frame_tensor, 0)
 
     if itter == 0:
         stack_tensor = frame_tensor
     elif itter < 4:
-        frame_tensor = torch.unsqueeze(torch.Tensor(ale.getScreenRGB()).permute([2, 0, 1]), dim=0)
         stack_tensor = torch.cat((last_frames, frame_tensor), dim=0)
     else:
         stack_tensor = torch.cat((last_frames[1:], frame_tensor), dim=0)
 
     print(f'Stack Tensor shape: {stack_tensor.shape}')
+
     return stack_tensor
+ 
+def preProcessFrame(frame):
+    """
+    Prepares a Tensor for us 
+    
+    Args:
+        frame (np.array): numpy array of 8-bit integers (0-255) that each 
+                          represent a pixel colour in the Atari 2600. With
+                          shape (210, 160).
 
+    Returns:
+        torch.Tensor: 
+        
+    """
+    (n, d, channels) = frame.shape
 
-class Net(nn.Module):
+    ret = torch.Tensor(n//2, d//2, channels)
 
+    for c in range(channels):
+        for i in range(n//2):
+            for j in range(d//2):
+                ret[i, j, c] = (frame[i, j, c] + frame[i, j+1, c] + frame[i+1, j, c] + frame[i+1, j+1, c]) // 4
+
+    return ret
+
+class AtariWorldModel(nn.Module):
+    """
+    The general Idea:
+
+    We begin by forming a Neural Network that takes as Input the four last frames of the
+    game as well as the action that lead to this state. The network will be trained to 
+    attempt to produce the frame that resulted from the action.
+
+    """
     def __init__(self):
-        super(Net, self).__init__()
-        # 1 input image channel, 6 output channels, 5x5 square convolution
-        # kernel
-        self.pixelEmbeding = nn.Linear()
+        super(AtariWorldModel, self).__init__()
 
-        self.conv1 = nn.Conv2d(in_channels=64,out_channels=128, kernel_size=4, stride=2)
-        self.conv2 = nn.Conv2d(in_channels=)
-        self.conv2 = nn.Conv2d(6, 16, 5)
-        # an affine operation: y = Wx + b
-        self.fc1 = nn.Linear(16 * 5 * 5, 120)  # 5*5 from image dimension
-        self.fc2 = nn.Linear(120, 84)
-        self.fc3 = nn.Linear(84, 10)
+        self.conv_dropout = nn.Dropout(0.15)
+
+        # (_, 64, 105, 80) -> (_, 128, 53, 40)
+        self.layer_norm1 = nn.LayerNorm([64, 105, 80])
+        self.conv1 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=4, stride=2, padding=1)
+
+        # (_, 128, 53, 40) -> (_, 256, 27, 20)        
+        self.layer_norm2 = nn.LayerNorm([128, 53, 40])
+        self.conv2 = nn.Conv2d(in_channels=128, out_channels=256, kernel_size=4, stride=2, padding=1)
+
+        # (_, 256, 27, 20) -> (_, 256, 14, 10)
+        self.layer_norm3 = nn.LayerNorm([256, 27, 20])
+        self.conv3 = nn.Conv2d(in_channels=256, out_channels=256, kernel_size=4, stride=2, padding=2)
+
+        # (_, 256, 14, 10) -> (_, 256, 7, 5)
+        self.layer_norm4 = nn.LayerNorm([256, 14, 10])
+        self.conv4 = nn.Conv2d(in_channels=256, out_channels=256, kernel_size=4, stride=2, padding=2)
+        
+        # (_, 256, 7, 5)   -> (_, 256, 4, 3)
+        self.layer_norm5 = nn.LayerNorm([256, 7, 5])
+        self.conv5 = nn.Conv2d(in_channels=256, out_channels=256, kernel_size=4, stride=2, padding=2)
+        
+        # (_, 256, 4, 3)   -> (_, 256, 2, 2)
+        self.layer_norm6 = nn.LayerNorm([256, 4, 3])
+        self.conv6 = nn.Conv2d(in_channels=256, out_channels=256, kernel_size=4, stride=2, padding=2)
 
     def forward(self, x):
-        # Max pooling over a (2, 2) window
-        x = F.max_pool2d(F.relu(self.conv1(x)), (2, 2))
-        # If the size is a square, you can specify with a single number
-        x = F.max_pool2d(F.relu(self.conv2(x)), 2)
-        x = torch.flatten(x, 1) # flatten all dimensions except the batch dimension
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
+        x = self.layer_norm1(self.conv1(self.conv_dropout(x)))
+        x = self.layer_norm2(self.conv2(self.conv_dropout(x)))
+        x = self.layer_norm3(self.conv3(self.conv_dropout(x)))
+        x = self.layer_norm4(self.conv4(self.conv_dropout(x)))
+        x = self.layer_norm5(self.conv5(self.conv_dropout(x)))
+        x = self.layer_norm6(self.conv6(self.conv_dropout(x)))
         return x
 
 
