@@ -1,0 +1,321 @@
+Defaulting to user installation because normal site-packages is not writeable
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already satisfied: wandb in /home/iliaskar/.local/lib/python3.8/site-packages (0.12.9)
+Requirement already satisfied: sentry-sdk>=1.0.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (1.5.1)
+Requirement already satisfied: promise<3,>=2.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (2.3+computecanada)
+Requirement already satisfied: requests<3,>=2.0.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from wandb) (2.26.0+computecanada)
+Requirement already satisfied: subprocess32>=3.5.3 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (3.5.4+computecanada)
+Requirement already satisfied: docker-pycreds>=0.4.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (0.4.0+computecanada)
+Requirement already satisfied: six>=1.13.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.8.10/lib/python3.8/site-packages (from wandb) (1.14.0)
+Requirement already satisfied: configparser>=3.8.1 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (5.2.0)
+Requirement already satisfied: pathtools in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (0.1.2+computecanada)
+Requirement already satisfied: yaspin>=1.0.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (2.1.0+computecanada)
+Requirement already satisfied: psutil>=5.0.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (5.8.0+computecanada)
+Requirement already satisfied: protobuf>=3.12.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (3.19.1+computecanada)
+Requirement already satisfied: GitPython>=1.0.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (3.1.24+computecanada)
+Requirement already satisfied: python-dateutil>=2.6.1 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ipykernel/2021a/lib/python3.8/site-packages (from wandb) (2.8.1)
+Requirement already satisfied: shortuuid>=0.5.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (1.0.8)
+Requirement already satisfied: PyYAML in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (6.0+computecanada)
+Requirement already satisfied: Click!=8.0.0,>=7.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (8.0.3+computecanada)
+Requirement already satisfied: certifi in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from sentry-sdk>=1.0.0->wandb) (2021.5.30+computecanada)
+Requirement already satisfied: urllib3>=1.10.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from sentry-sdk>=1.0.0->wandb) (1.26.6+computecanada)
+Requirement already satisfied: idna<4,>=2.5; python_version >= "3" in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from requests<3,>=2.0.0->wandb) (3.2+computecanada)
+Requirement already satisfied: charset-normalizer~=2.0.0; python_version >= "3" in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from requests<3,>=2.0.0->wandb) (2.0.2+computecanada)
+Requirement already satisfied: termcolor<2.0.0,>=1.1.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from yaspin>=1.0.0->wandb) (1.1.0+computecanada)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /home/iliaskar/.local/lib/python3.8/site-packages (from GitPython>=1.0.0->wandb) (4.0.9+computecanada)
+Requirement already satisfied: typing-extensions>=3.7.4.3; python_version < "3.10" in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from GitPython>=1.0.0->wandb) (3.10.0.0+computecanada)
+Requirement already satisfied: smmap<6,>=3.0.1 in /home/iliaskar/.local/lib/python3.8/site-packages (from gitdb<5,>=4.0.1->GitPython>=1.0.0->wandb) (5.0.0+computecanada)
+agents                                     : 8
+batch_size                                 : 4
+bottleneck_bits                            : 128
+bottleneck_noise                           : 0.1
+clip_grad_norm                             : 1.0
+compress_steps                             : 5
+device                                     : cuda
+done_on_last_rollout_step                  : True
+dropout                                    : 0.15
+env_name                                   : Freeway
+epochs                                     : 15
+world_model_steps                          : 10000
+agent_steps                                : 800
+experiment_name                            : 20-12-21-13:18:08
+filter_double_steps                        : 3
+frame_shape                                : (3, 105, 80)
+hidden_layers                              : 2
+hidden_size                                : 96
+input_noise                                : 0.05
+latent_rnn_max_sampling                    : 0.5
+latent_state_size                          : 128
+latent_use_max_probability                 : 0.8
+load_models                                : False
+noop_max                                   : 8
+ppo_gamma                                  : 0.99
+ppo_lr                                     : 0.0001
+recurrent_state_size                       : 64
+render_evaluation                          : False
+render_training                            : False
+residual_dropout                           : 0.5
+rollout_length                             : 100
+save_models                                : False
+scheduled_sampling_decay_steps             : 22250
+simulation_flip_first_random_for_beginning : True
+stacking                                   : 4
+stack_internal_states                      : True
+target_loss_clipping                       : 0.03
+trust_region_beta                          : 0.0001
+use_ppo_lr_decay                           : False
+use_stochastic_model                       : True
+use_wandb                                  : True
+policy_optimizer                           : reinforce
+wandb: Currently logged in as: iliaskarimalis (use `wandb login --relogin` to force relogin)
+wandb: Tracking run with wandb version 0.12.9
+wandb: Syncing run 20-12-21-13:18:08
+wandb:  View project at https://wandb.ai/iliaskarimalis/SimPLe
+wandb:  View run at https://wandb.ai/iliaskarimalis/SimPLe/runs/bldtcvcp
+wandb: Run data is saved locally in /project/6052292/iliaskar/model-based-atari/SimPLe/wandb/run-20211220_131834-bldtcvcp
+wandb: Run `wandb offline` to turn off syncing.
+
+Random exploration:   0% 0/6400 [00:00<?, ?it/s]Random exploration:   1% 41/6400 [00:00<00:15, 408.93it/s]Random exploration:   1% 89/6400 [00:00<00:14, 447.74it/s]Random exploration:   2% 136/6400 [00:00<00:13, 454.36it/s]Random exploration:   3% 183/6400 [00:00<00:13, 458.25it/s]Random exploration:   4% 230/6400 [00:00<00:13, 460.53it/s]Random exploration:   4% 277/6400 [00:00<00:13, 462.74it/s]Random exploration:   5% 325/6400 [00:00<00:13, 465.34it/s]Random exploration:   6% 374/6400 [00:00<00:12, 472.22it/s]Random exploration:   7% 422/6400 [00:00<00:12, 473.80it/s]Random exploration:   7% 470/6400 [00:01<00:12, 468.83it/s]Random exploration:   8% 517/6400 [00:01<00:12, 468.74it/s]Random exploration:   9% 564/6400 [00:01<00:12, 467.89it/s]Random exploration:  10% 611/6400 [00:01<00:12, 462.40it/s]Random exploration:  10% 659/6400 [00:01<00:12, 466.33it/s]Random exploration:  11% 706/6400 [00:01<00:12, 466.92it/s]Random exploration:  12% 754/6400 [00:01<00:12, 470.10it/s]Random exploration:  13% 802/6400 [00:01<00:12, 462.10it/s]Random exploration:  13% 849/6400 [00:01<00:11, 463.99it/s]Random exploration:  14% 896/6400 [00:02<00:14, 376.84it/s]Random exploration:  15% 944/6400 [00:02<00:13, 400.95it/s]Random exploration:  15% 990/6400 [00:02<00:12, 416.41it/s]Random exploration:  16% 1039/6400 [00:02<00:12, 434.74it/s]Random exploration:  17% 1084/6400 [00:02<00:12, 419.08it/s]Random exploration:  18% 1127/6400 [00:02<00:13, 397.19it/s]Random exploration:  18% 1175/6400 [00:02<00:12, 418.99it/s]Random exploration:  19% 1223/6400 [00:02<00:11, 434.43it/s]Random exploration:  20% 1271/6400 [00:02<00:11, 445.72it/s]Random exploration:  21% 1320/6400 [00:02<00:11, 458.29it/s]Random exploration:  21% 1367/6400 [00:03<00:10, 461.32it/s]Random exploration:  22% 1416/6400 [00:03<00:10, 467.16it/s]Random exploration:  23% 1464/6400 [00:03<00:10, 468.43it/s]Random exploration:  24% 1513/6400 [00:03<00:10, 472.05it/s]Random exploration:  24% 1562/6400 [00:03<00:10, 476.93it/s]Random exploration:  25% 1610/6400 [00:03<00:10, 475.84it/s]Random exploration:  26% 1660/6400 [00:03<00:09, 481.67it/s]Random exploration:  27% 1709/6400 [00:03<00:09, 477.79it/s]Random exploration:  27% 1758/6400 [00:03<00:09, 479.19it/s]Random exploration:  28% 1807/6400 [00:03<00:09, 480.68it/s]Random exploration:  29% 1856/6400 [00:04<00:09, 474.95it/s]Random exploration:  30% 1904/6400 [00:04<00:09, 473.67it/s]Random exploration:  30% 1952/6400 [00:04<00:09, 469.38it/s]Random exploration:  31% 2001/6400 [00:04<00:09, 474.67it/s]Random exploration:  32% 2049/6400 [00:04<00:12, 357.23it/s]Random exploration:  33% 2099/6400 [00:04<00:11, 390.07it/s]Random exploration:  34% 2148/6400 [00:04<00:10, 414.27it/s]Random exploration:  34% 2197/6400 [00:04<00:09, 433.39it/s]Random exploration:  35% 2245/6400 [00:05<00:09, 443.99it/s]Random exploration:  36% 2294/6400 [00:05<00:09, 456.18it/s]Random exploration:  37% 2342/6400 [00:05<00:08, 462.46it/s]Random exploration:  37% 2390/6400 [00:05<00:08, 466.61it/s]Random exploration:  38% 2439/6400 [00:05<00:08, 471.09it/s]Random exploration:  39% 2487/6400 [00:05<00:08, 469.33it/s]Random exploration:  40% 2536/6400 [00:05<00:08, 473.86it/s]Random exploration:  40% 2585/6400 [00:05<00:08, 475.76it/s]Random exploration:  41% 2634/6400 [00:05<00:07, 478.15it/s]Random exploration:  42% 2683/6400 [00:05<00:07, 479.35it/s]Random exploration:  43% 2732/6400 [00:06<00:07, 472.74it/s]Random exploration:  43% 2780/6400 [00:06<00:07, 474.81it/s]Random exploration:  44% 2829/6400 [00:06<00:07, 477.58it/s]Random exploration:  45% 2878/6400 [00:06<00:07, 479.26it/s]Random exploration:  46% 2926/6400 [00:06<00:07, 479.08it/s]Random exploration:  46% 2974/6400 [00:06<00:07, 475.84it/s]Random exploration:  47% 3022/6400 [00:06<00:07, 475.29it/s]Random exploration:  48% 3071/6400 [00:06<00:06, 479.24it/s]Random exploration:  49% 3120/6400 [00:06<00:06, 480.06it/s]Random exploration:  50% 3169/6400 [00:06<00:06, 478.79it/s]Random exploration:  50% 3217/6400 [00:07<00:06, 473.35it/s]Random exploration:  51% 3266/6400 [00:07<00:06, 475.57it/s]Random exploration:  52% 3314/6400 [00:07<00:06, 475.16it/s]Random exploration:  53% 3362/6400 [00:07<00:06, 475.42it/s]Random exploration:  53% 3411/6400 [00:07<00:06, 478.15it/s]Random exploration:  54% 3459/6400 [00:07<00:06, 475.76it/s]Random exploration:  55% 3509/6400 [00:07<00:06, 480.45it/s]Random exploration:  56% 3559/6400 [00:07<00:05, 484.42it/s]Random exploration:  56% 3608/6400 [00:07<00:05, 485.93it/s]Random exploration:  57% 3658/6400 [00:07<00:05, 487.30it/s]Random exploration:  58% 3707/6400 [00:08<00:06, 433.06it/s]Random exploration:  59% 3754/6400 [00:08<00:05, 441.83it/s]Random exploration:  59% 3803/6400 [00:08<00:05, 454.74it/s]Random exploration:  60% 3851/6400 [00:08<00:05, 460.67it/s]Random exploration:  61% 3900/6400 [00:08<00:05, 467.51it/s]Random exploration:  62% 3948/6400 [00:08<00:05, 467.15it/s]Random exploration:  62% 3996/6400 [00:08<00:05, 469.17it/s]Random exploration:  63% 4045/6400 [00:08<00:04, 475.20it/s]Random exploration:  64% 4093/6400 [00:08<00:06, 370.97it/s]Random exploration:  65% 4140/6400 [00:09<00:05, 395.32it/s]Random exploration:  65% 4189/6400 [00:09<00:05, 418.06it/s]Random exploration:  66% 4237/6400 [00:09<00:04, 434.65it/s]Random exploration:  67% 4285/6400 [00:09<00:04, 445.75it/s]Random exploration:  68% 4334/6400 [00:09<00:04, 456.86it/s]Random exploration:  68% 4382/6400 [00:09<00:04, 461.80it/s]Random exploration:  69% 4430/6400 [00:09<00:04, 466.71it/s]Random exploration:  70% 4478/6400 [00:09<00:04, 469.72it/s]Random exploration:  71% 4526/6400 [00:09<00:03, 472.69it/s]Random exploration:  71% 4574/6400 [00:10<00:03, 473.66it/s]Random exploration:  72% 4622/6400 [00:10<00:03, 471.39it/s]Random exploration:  73% 4671/6400 [00:10<00:03, 474.21it/s]Random exploration:  74% 4719/6400 [00:10<00:03, 475.57it/s]Random exploration:  74% 4767/6400 [00:10<00:03, 468.71it/s]Random exploration:  75% 4814/6400 [00:10<00:03, 467.54it/s]Random exploration:  76% 4861/6400 [00:10<00:03, 463.27it/s]Random exploration:  77% 4910/6400 [00:10<00:03, 468.90it/s]Random exploration:  77% 4958/6400 [00:10<00:03, 471.44it/s]Random exploration:  78% 5007/6400 [00:10<00:02, 475.10it/s]Random exploration:  79% 5056/6400 [00:11<00:02, 477.49it/s]Random exploration:  80% 5104/6400 [00:11<00:02, 475.28it/s]Random exploration:  81% 5154/6400 [00:11<00:02, 480.41it/s]Random exploration:  81% 5203/6400 [00:11<00:02, 482.35it/s]Random exploration:  82% 5252/6400 [00:11<00:02, 481.78it/s]Random exploration:  83% 5301/6400 [00:11<00:02, 483.47it/s]Random exploration:  84% 5350/6400 [00:11<00:02, 478.96it/s]Random exploration:  84% 5399/6400 [00:11<00:02, 481.43it/s]Random exploration:  85% 5448/6400 [00:11<00:01, 483.23it/s]Random exploration:  86% 5498/6400 [00:11<00:01, 486.84it/s]Random exploration:  87% 5547/6400 [00:12<00:01, 480.58it/s]Random exploration:  87% 5596/6400 [00:12<00:01, 479.39it/s]Random exploration:  88% 5645/6400 [00:12<00:01, 480.58it/s]Random exploration:  89% 5694/6400 [00:12<00:01, 480.96it/s]Random exploration:  90% 5743/6400 [00:12<00:01, 479.91it/s]Random exploration:  90% 5792/6400 [00:12<00:01, 480.11it/s]Random exploration:  91% 5841/6400 [00:12<00:01, 472.58it/s]Random exploration:  92% 5889/6400 [00:12<00:01, 473.29it/s]Random exploration:  93% 5937/6400 [00:12<00:00, 473.84it/s]Random exploration:  94% 5985/6400 [00:12<00:00, 475.58it/s]Random exploration:  94% 6033/6400 [00:13<00:00, 471.83it/s]Random exploration:  95% 6081/6400 [00:13<00:00, 472.60it/s]Random exploration:  96% 6129/6400 [00:13<00:00, 471.90it/s]Random exploration:  97% 6177/6400 [00:13<00:00, 366.94it/s]Random exploration:  97% 6227/6400 [00:13<00:00, 396.70it/s]Random exploration:  98% 6273/6400 [00:13<00:00, 413.06it/s]Random exploration:  99% 6321/6400 [00:13<00:00, 429.31it/s]Random exploration: 100% 6370/6400 [00:13<00:00, 443.70it/s]Random exploration: 100% 6400/6400 [00:13<00:00, 459.09it/s]
+Epoch:   0% 0/15 [00:00<?, ?it/s]
+Collecting interactions:   0% 0/6400 [00:00<?, ?it/s][A
+Collecting interactions:   0% 1/6400 [00:01<3:16:19,  1.84s/it][A
+Collecting interactions:   0% 23/6400 [00:01<06:30, 16.33it/s] [A
+Collecting interactions:   1% 52/6400 [00:02<02:31, 41.79it/s][A
+Collecting interactions:   1% 80/6400 [00:02<01:30, 69.69it/s][A
+Collecting interactions:   2% 109/6400 [00:02<01:02, 101.06it/s][A
+Collecting interactions:   2% 139/6400 [00:02<00:46, 134.18it/s][A
+Collecting interactions:   3% 168/6400 [00:02<00:37, 164.09it/s][A
+Collecting interactions:   3% 198/6400 [00:02<00:32, 192.29it/s][A
+Collecting interactions:   4% 226/6400 [00:02<00:29, 212.37it/s][A
+Collecting interactions:   4% 255/6400 [00:02<00:26, 229.95it/s][A
+Collecting interactions:   4% 284/6400 [00:02<00:24, 245.50it/s][A
+Collecting interactions:   5% 314/6400 [00:02<00:23, 258.42it/s][A
+Collecting interactions:   5% 344/6400 [00:03<00:22, 268.14it/s][A
+Collecting interactions:   6% 373/6400 [00:03<00:22, 271.32it/s][A
+Collecting interactions:   6% 402/6400 [00:03<00:21, 276.45it/s][A
+Collecting interactions:   7% 431/6400 [00:03<00:21, 279.81it/s][A
+Collecting interactions:   7% 460/6400 [00:03<00:21, 281.27it/s][A
+Collecting interactions:   8% 489/6400 [00:03<00:21, 280.34it/s][A
+Collecting interactions:   8% 518/6400 [00:03<00:21, 279.56it/s][A
+Collecting interactions:   9% 547/6400 [00:03<00:20, 279.61it/s][A
+Collecting interactions:   9% 576/6400 [00:03<00:20, 281.86it/s][A
+Collecting interactions:   9% 605/6400 [00:03<00:20, 283.07it/s][A
+Collecting interactions:  10% 634/6400 [00:04<00:20, 282.53it/s][A
+Collecting interactions:  10% 663/6400 [00:04<00:20, 280.24it/s][A
+Collecting interactions:  11% 693/6400 [00:04<00:20, 283.27it/s][A
+Collecting interactions:  11% 722/6400 [00:04<00:19, 284.70it/s][A
+Collecting interactions:  12% 752/6400 [00:04<00:19, 286.40it/s][A
+Collecting interactions:  12% 781/6400 [00:04<00:19, 284.69it/s][A
+Collecting interactions:  13% 810/6400 [00:04<00:19, 282.68it/s][A
+Collecting interactions:  13% 839/6400 [00:04<00:19, 284.36it/s][A
+Collecting interactions:  14% 868/6400 [00:04<00:19, 282.63it/s][A
+Collecting interactions:  14% 897/6400 [00:05<00:19, 284.58it/s][A
+Collecting interactions:  14% 926/6400 [00:05<00:19, 285.39it/s][A
+Collecting interactions:  15% 955/6400 [00:05<00:19, 283.83it/s][A
+Collecting interactions:  15% 985/6400 [00:05<00:18, 286.11it/s][A
+Collecting interactions:  16% 1014/6400 [00:05<00:18, 287.17it/s][A
+Collecting interactions:  16% 1043/6400 [00:05<00:18, 287.55it/s][A
+Collecting interactions:  17% 1073/6400 [00:05<00:18, 288.72it/s][A
+Collecting interactions:  17% 1102/6400 [00:05<00:18, 287.12it/s][A
+Collecting interactions:  18% 1132/6400 [00:05<00:18, 288.31it/s][A
+Collecting interactions:  18% 1162/6400 [00:05<00:18, 290.78it/s][A
+Collecting interactions:  19% 1192/6400 [00:06<00:17, 290.60it/s][A
+Collecting interactions:  19% 1222/6400 [00:06<00:17, 289.76it/s][A
+Collecting interactions:  20% 1251/6400 [00:06<00:17, 288.10it/s][A
+Collecting interactions:  20% 1281/6400 [00:06<00:17, 289.33it/s][A
+Collecting interactions:  20% 1311/6400 [00:06<00:17, 289.80it/s][A
+Collecting interactions:  21% 1341/6400 [00:06<00:17, 290.26it/s][A
+Collecting interactions:  21% 1371/6400 [00:06<00:17, 289.92it/s][A
+Collecting interactions:  22% 1400/6400 [00:06<00:17, 288.24it/s][A
+Collecting interactions:  22% 1430/6400 [00:06<00:17, 290.18it/s][A
+Collecting interactions:  23% 1460/6400 [00:06<00:16, 291.42it/s][A
+Collecting interactions:  23% 1490/6400 [00:07<00:16, 292.19it/s][A
+Collecting interactions:  24% 1520/6400 [00:07<00:16, 291.38it/s][A
+Collecting interactions:  24% 1550/6400 [00:07<00:16, 288.06it/s][A
+Collecting interactions:  25% 1580/6400 [00:07<00:16, 289.85it/s][A
+Collecting interactions:  25% 1609/6400 [00:07<00:16, 289.08it/s][A
+Collecting interactions:  26% 1638/6400 [00:07<00:16, 289.34it/s][A
+Collecting interactions:  26% 1667/6400 [00:07<00:16, 289.07it/s][A
+Collecting interactions:  26% 1696/6400 [00:07<00:16, 286.15it/s][A
+Collecting interactions:  27% 1726/6400 [00:07<00:16, 288.90it/s][A
+Collecting interactions:  27% 1756/6400 [00:07<00:16, 289.44it/s][A
+Collecting interactions:  28% 1786/6400 [00:08<00:15, 290.23it/s][A
+Collecting interactions:  28% 1816/6400 [00:08<00:15, 286.86it/s][A
+Collecting interactions:  29% 1846/6400 [00:08<00:15, 289.28it/s][A
+Collecting interactions:  29% 1876/6400 [00:08<00:15, 290.25it/s][A
+Collecting interactions:  30% 1906/6400 [00:08<00:15, 290.64it/s][A
+Collecting interactions:  30% 1936/6400 [00:08<00:15, 290.15it/s][A
+Collecting interactions:  31% 1966/6400 [00:08<00:15, 286.36it/s][A
+Collecting interactions:  31% 1995/6400 [00:08<00:15, 285.53it/s][A
+Collecting interactions:  32% 2025/6400 [00:08<00:15, 289.33it/s][A
+Collecting interactions:  32% 2054/6400 [00:09<00:19, 226.80it/s][A
+Collecting interactions:  33% 2083/6400 [00:09<00:17, 242.33it/s][A
+Collecting interactions:  33% 2114/6400 [00:09<00:16, 257.79it/s][A
+Collecting interactions:  34% 2144/6400 [00:09<00:15, 268.86it/s][A
+Collecting interactions:  34% 2174/6400 [00:09<00:15, 276.37it/s][A
+Collecting interactions:  34% 2203/6400 [00:09<00:14, 280.15it/s][A
+Collecting interactions:  35% 2232/6400 [00:09<00:14, 282.00it/s][A
+Collecting interactions:  35% 2263/6400 [00:09<00:14, 287.76it/s][A
+Collecting interactions:  36% 2293/6400 [00:09<00:14, 290.99it/s][A
+Collecting interactions:  36% 2323/6400 [00:10<00:14, 290.95it/s][A
+Collecting interactions:  37% 2353/6400 [00:10<00:13, 290.19it/s][A
+Collecting interactions:  37% 2383/6400 [00:10<00:13, 288.90it/s][A
+Collecting interactions:  38% 2413/6400 [00:10<00:13, 291.51it/s][A
+Collecting interactions:  38% 2443/6400 [00:10<00:13, 293.65it/s][A
+Collecting interactions:  39% 2473/6400 [00:10<00:13, 294.60it/s][A
+Collecting interactions:  39% 2503/6400 [00:10<00:13, 279.93it/s][A
+Collecting interactions:  40% 2532/6400 [00:10<00:15, 246.36it/s][A
+Collecting interactions:  40% 2558/6400 [00:10<00:15, 249.77it/s][A
+Collecting interactions:  40% 2584/6400 [00:11<00:15, 252.10it/s][A
+Collecting interactions:  41% 2611/6400 [00:11<00:14, 254.57it/s][A
+Collecting interactions:  41% 2637/6400 [00:11<00:16, 223.27it/s][A
+Collecting interactions:  42% 2661/6400 [00:11<00:17, 216.30it/s][A
+Collecting interactions:  42% 2684/6400 [00:11<00:17, 209.08it/s][A
+Collecting interactions:  42% 2711/6400 [00:11<00:16, 223.67it/s][A
+Collecting interactions:  43% 2738/6400 [00:11<00:15, 233.99it/s][A
+Collecting interactions:  43% 2764/6400 [00:11<00:15, 240.16it/s][A
+Collecting interactions:  44% 2791/6400 [00:11<00:14, 247.00it/s][A
+Collecting interactions:  44% 2817/6400 [00:12<00:14, 250.61it/s][A
+Collecting interactions:  44% 2843/6400 [00:12<00:14, 253.33it/s][A
+Collecting interactions:  45% 2869/6400 [00:12<00:13, 254.00it/s][A
+Collecting interactions:  45% 2895/6400 [00:12<00:13, 252.70it/s][A
+Collecting interactions:  46% 2921/6400 [00:12<00:13, 254.57it/s][A
+Collecting interactions:  46% 2948/6400 [00:12<00:13, 256.32it/s][A
+Collecting interactions:  46% 2974/6400 [00:12<00:13, 256.22it/s][A
+Collecting interactions:  47% 3000/6400 [00:12<00:13, 256.19it/s][A
+Collecting interactions:  47% 3026/6400 [00:12<00:13, 253.94it/s][A
+Collecting interactions:  48% 3052/6400 [00:12<00:13, 254.37it/s][A
+Collecting interactions:  48% 3078/6400 [00:13<00:13, 254.90it/s][A
+Collecting interactions:  48% 3104/6400 [00:13<00:12, 255.45it/s][A
+Collecting interactions:  49% 3130/6400 [00:13<00:12, 255.16it/s][A
+Collecting interactions:  49% 3156/6400 [00:13<00:12, 254.16it/s][A
+Collecting interactions:  50% 3182/6400 [00:13<00:12, 253.43it/s][A
+Collecting interactions:  50% 3208/6400 [00:13<00:12, 254.50it/s][A
+Collecting interactions:  51% 3234/6400 [00:13<00:12, 254.45it/s][A
+Collecting interactions:  51% 3260/6400 [00:13<00:12, 251.65it/s][A
+Collecting interactions:  51% 3286/6400 [00:13<00:12, 252.49it/s][A
+Collecting interactions:  52% 3312/6400 [00:13<00:12, 253.99it/s][A
+Collecting interactions:  52% 3338/6400 [00:14<00:12, 253.77it/s][A
+Collecting interactions:  53% 3364/6400 [00:14<00:11, 253.36it/s][A
+Collecting interactions:  53% 3390/6400 [00:14<00:11, 251.19it/s][A
+Collecting interactions:  53% 3416/6400 [00:14<00:11, 253.49it/s][A
+Collecting interactions:  54% 3442/6400 [00:14<00:11, 253.65it/s][A
+Collecting interactions:  54% 3468/6400 [00:14<00:11, 254.97it/s][A
+Collecting interactions:  55% 3494/6400 [00:14<00:11, 254.57it/s][A
+Collecting interactions:  55% 3520/6400 [00:14<00:11, 252.84it/s][A
+Collecting interactions:  55% 3546/6400 [00:14<00:11, 252.54it/s][A
+Collecting interactions:  56% 3572/6400 [00:14<00:11, 249.63it/s][A
+Collecting interactions:  56% 3597/6400 [00:15<00:11, 240.52it/s][A
+Collecting interactions:  57% 3623/6400 [00:15<00:11, 243.70it/s][A
+Collecting interactions:  57% 3648/6400 [00:15<00:11, 244.31it/s][A
+Collecting interactions:  57% 3674/6400 [00:15<00:11, 247.43it/s][A
+Collecting interactions:  58% 3700/6400 [00:15<00:10, 248.66it/s][A
+Collecting interactions:  58% 3726/6400 [00:15<00:10, 250.49it/s][A
+Collecting interactions:  59% 3752/6400 [00:15<00:10, 252.05it/s][A
+Collecting interactions:  59% 3778/6400 [00:15<00:10, 250.44it/s][A
+Collecting interactions:  59% 3804/6400 [00:15<00:10, 252.45it/s][A
+Collecting interactions:  60% 3830/6400 [00:16<00:10, 252.95it/s][A
+Collecting interactions:  60% 3856/6400 [00:16<00:09, 254.58it/s][A
+Collecting interactions:  61% 3882/6400 [00:16<00:09, 254.18it/s][A
+Collecting interactions:  61% 3908/6400 [00:16<00:09, 253.47it/s][A
+Collecting interactions:  61% 3934/6400 [00:16<00:09, 254.32it/s][A
+Collecting interactions:  62% 3960/6400 [00:16<00:09, 254.86it/s][A
+Collecting interactions:  62% 3986/6400 [00:16<00:09, 255.20it/s][A
+Collecting interactions:  63% 4012/6400 [00:16<00:09, 255.06it/s][A
+Collecting interactions:  63% 4038/6400 [00:16<00:09, 253.66it/s][A
+Collecting interactions:  64% 4064/6400 [00:16<00:09, 254.31it/s][A
+Collecting interactions:  64% 4090/6400 [00:17<00:12, 190.78it/s][A
+Collecting interactions:  64% 4116/6400 [00:17<00:11, 206.50it/s][A
+Collecting interactions:  65% 4141/6400 [00:17<00:10, 215.35it/s][A
+Collecting interactions:  65% 4166/6400 [00:17<00:09, 223.56it/s][A
+Collecting interactions:  66% 4192/6400 [00:17<00:09, 232.70it/s][A
+Collecting interactions:  66% 4218/6400 [00:17<00:09, 239.84it/s][A
+Collecting interactions:  66% 4245/6400 [00:17<00:08, 246.04it/s][A
+Collecting interactions:  67% 4271/6400 [00:17<00:08, 247.86it/s][A
+Collecting interactions:  67% 4297/6400 [00:17<00:08, 250.19it/s][A
+Collecting interactions:  68% 4323/6400 [00:18<00:08, 251.86it/s][A
+Collecting interactions:  68% 4349/6400 [00:18<00:08, 251.61it/s][A
+Collecting interactions:  68% 4375/6400 [00:18<00:07, 253.22it/s][A
+Collecting interactions:  69% 4401/6400 [00:18<00:07, 253.00it/s][A
+Collecting interactions:  69% 4427/6400 [00:18<00:07, 254.14it/s][A
+Collecting interactions:  70% 4453/6400 [00:18<00:07, 253.94it/s][A
+Collecting interactions:  70% 4479/6400 [00:18<00:07, 253.90it/s][A
+Collecting interactions:  70% 4505/6400 [00:18<00:07, 254.21it/s][A
+Collecting interactions:  71% 4531/6400 [00:18<00:07, 252.09it/s][A
+Collecting interactions:  71% 4557/6400 [00:18<00:07, 253.31it/s][A
+Collecting interactions:  72% 4583/6400 [00:19<00:07, 254.71it/s][A
+Collecting interactions:  72% 4609/6400 [00:19<00:07, 253.68it/s][A
+Collecting interactions:  72% 4635/6400 [00:19<00:06, 253.14it/s][A
+Collecting interactions:  73% 4661/6400 [00:19<00:06, 254.40it/s][A
+Collecting interactions:  73% 4687/6400 [00:19<00:06, 254.61it/s][A
+Collecting interactions:  74% 4713/6400 [00:19<00:06, 254.16it/s][A
+Collecting interactions:  74% 4739/6400 [00:19<00:06, 253.92it/s][A
+Collecting interactions:  74% 4765/6400 [00:19<00:06, 252.70it/s][A
+Collecting interactions:  75% 4791/6400 [00:19<00:06, 253.42it/s][A
+Collecting interactions:  75% 4817/6400 [00:20<00:06, 255.08it/s][A
+Collecting interactions:  76% 4843/6400 [00:20<00:06, 255.53it/s][A
+Collecting interactions:  76% 4869/6400 [00:20<00:06, 254.69it/s][A
+Collecting interactions:  76% 4895/6400 [00:20<00:05, 253.56it/s][A
+Collecting interactions:  77% 4921/6400 [00:20<00:05, 250.33it/s][A
+Collecting interactions:  77% 4947/6400 [00:20<00:05, 253.06it/s][A
+Collecting interactions:  78% 4973/6400 [00:20<00:05, 245.05it/s][A
+Collecting interactions:  78% 4999/6400 [00:20<00:05, 248.85it/s][A
+Collecting interactions:  79% 5025/6400 [00:20<00:05, 250.16it/s][A
+Collecting interactions:  79% 5051/6400 [00:20<00:05, 251.31it/s][A
+Collecting interactions:  79% 5077/6400 [00:21<00:05, 252.86it/s][A
+Collecting interactions:  80% 5103/6400 [00:21<00:05, 253.30it/s][A
+Collecting interactions:  80% 5129/6400 [00:21<00:05, 252.83it/s][A
+Collecting interactions:  81% 5155/6400 [00:21<00:04, 251.80it/s][A
+Collecting interactions:  81% 5181/6400 [00:21<00:04, 253.45it/s][A
+Collecting interactions:  81% 5207/6400 [00:21<00:04, 252.13it/s][A
+Collecting interactions:  82% 5233/6400 [00:21<00:04, 253.30it/s][A
+Collecting interactions:  82% 5259/6400 [00:21<00:04, 254.68it/s][A
+Collecting interactions:  83% 5285/6400 [00:21<00:04, 252.76it/s][A
+Collecting interactions:  83% 5311/6400 [00:21<00:04, 253.95it/s][A
+Collecting interactions:  83% 5337/6400 [00:22<00:04, 253.71it/s][A
+Collecting interactions:  84% 5363/6400 [00:22<00:04, 252.21it/s][A
+Collecting interactions:  84% 5389/6400 [00:22<00:03, 253.87it/s][A
+Collecting interactions:  85% 5415/6400 [00:22<00:03, 252.57it/s][A
+Collecting interactions:  85% 5441/6400 [00:22<00:03, 252.59it/s][A
+Collecting interactions:  85% 5467/6400 [00:22<00:03, 252.66it/s][A
+Collecting interactions:  86% 5493/6400 [00:22<00:03, 241.93it/s][A
+Collecting interactions:  86% 5518/6400 [00:22<00:03, 230.23it/s][A
+Collecting interactions:  87% 5546/6400 [00:22<00:03, 243.56it/s][A
+Collecting interactions:  87% 5575/6400 [00:23<00:03, 254.94it/s][A
+Collecting interactions:  88% 5605/6400 [00:23<00:02, 265.44it/s][A
+Collecting interactions:  88% 5634/6400 [00:23<00:02, 271.93it/s][A
+Collecting interactions:  88% 5662/6400 [00:23<00:02, 273.20it/s][A
+Collecting interactions:  89% 5691/6400 [00:23<00:02, 276.41it/s][A
+Collecting interactions:  89% 5719/6400 [00:23<00:02, 277.37it/s][A
+Collecting interactions:  90% 5748/6400 [00:23<00:02, 280.48it/s][A
+Collecting interactions:  90% 5777/6400 [00:23<00:02, 281.65it/s][A
+Collecting interactions:  91% 5806/6400 [00:23<00:02, 282.00it/s][A
+Collecting interactions:  91% 5835/6400 [00:23<00:01, 283.70it/s][A
+Collecting interactions:  92% 5864/6400 [00:24<00:01, 284.92it/s][A
+Collecting interactions:  92% 5894/6400 [00:24<00:01, 286.45it/s][A
+Collecting interactions:  93% 5923/6400 [00:24<00:01, 284.56it/s][A
+Collecting interactions:  93% 5952/6400 [00:24<00:01, 283.51it/s][A
+Collecting interactions:  93% 5981/6400 [00:24<00:01, 283.77it/s][A
+Collecting interactions:  94% 6010/6400 [00:24<00:01, 284.34it/s][A
+Collecting interactions:  94% 6039/6400 [00:24<00:01, 284.19it/s][A
+Collecting interactions:  95% 6068/6400 [00:24<00:01, 284.96it/s][A
+Collecting interactions:  95% 6097/6400 [00:24<00:01, 283.45it/s][A
+Collecting interactions:  96% 6127/6400 [00:24<00:00, 285.77it/s][A
+Collecting interactions:  96% 6156/6400 [00:25<00:01, 223.74it/s][A
+Collecting interactions:  97% 6185/6400 [00:25<00:00, 239.42it/s][A
+Collecting interactions:  97% 6213/6400 [00:25<00:00, 249.22it/s][A
+Collecting interactions:  98% 6242/6400 [00:25<00:00, 259.51it/s][A
+Collecting interactions:  98% 6271/6400 [00:25<00:00, 267.23it/s][A
+Collecting interactions:  98% 6300/6400 [00:25<00:00, 273.22it/s][A
+Collecting interactions:  99% 6329/6400 [00:25<00:00, 275.20it/s][A
+Collecting interactions:  99% 6357/6400 [00:25<00:00, 273.56it/s][A
+Collecting interactions: 100% 6385/6400 [00:25<00:00, 275.07it/s][ACollecting interactions: 100% 6400/6400 [00:26<00:00, 245.79it/s]
+
+Training world model:   0% 0/30000 [00:00<?, ?it/s][Aterminate called after throwing an instance of 'c10::CUDAOutOfMemoryError'
+  what():  CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 11.91 GiB total capacity; 357.06 MiB already allocated; 24.25 MiB free; 372.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Exception raised from malloc at /tmp/coulombc/pytorch_build_2021-11-09_14-57-01/avx2/python3.8/pytorch/c10/cuda/CUDACachingAllocator.cpp:513 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x55 (0x2b1ebf986905 in /home/iliaskar/.local/lib/python3.8/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x295bf (0x2b1ebf9285bf in /home/iliaskar/.local/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x2a2c5 (0x2b1ebf9292c5 in /home/iliaskar/.local/lib/python3.8/site-packages/torch/lib/libc10_cuda.so)
+/var/spool/slurmd/job22037012/slurm_script: line 21: 11102 Aborted                 (core dumped) python3 -m simple --world-model-steps 10000 --agent-steps 800 --policy-optimizer reinforce --trust-region-beta 0.0001 --rollout-length 100 --agents 8 --use-wandb

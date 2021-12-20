@@ -1,0 +1,544 @@
+Defaulting to user installation because normal site-packages is not writeable
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already satisfied: wandb in /home/iliaskar/.local/lib/python3.8/site-packages (0.12.9)
+Requirement already satisfied: Click!=8.0.0,>=7.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (8.0.3+computecanada)
+Requirement already satisfied: GitPython>=1.0.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (3.1.24+computecanada)
+Requirement already satisfied: docker-pycreds>=0.4.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (0.4.0+computecanada)
+Requirement already satisfied: requests<3,>=2.0.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from wandb) (2.26.0+computecanada)
+Requirement already satisfied: pathtools in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (0.1.2+computecanada)
+Requirement already satisfied: configparser>=3.8.1 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (5.2.0)
+Requirement already satisfied: yaspin>=1.0.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (2.1.0+computecanada)
+Requirement already satisfied: protobuf>=3.12.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (3.19.1+computecanada)
+Requirement already satisfied: PyYAML in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (6.0+computecanada)
+Requirement already satisfied: sentry-sdk>=1.0.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (1.5.1)
+Requirement already satisfied: python-dateutil>=2.6.1 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ipykernel/2021a/lib/python3.8/site-packages (from wandb) (2.8.1)
+Requirement already satisfied: shortuuid>=0.5.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (1.0.8)
+Requirement already satisfied: six>=1.13.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.8.10/lib/python3.8/site-packages (from wandb) (1.14.0)
+Requirement already satisfied: psutil>=5.0.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (5.8.0+computecanada)
+Requirement already satisfied: promise<3,>=2.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (2.3+computecanada)
+Requirement already satisfied: subprocess32>=3.5.3 in /home/iliaskar/.local/lib/python3.8/site-packages (from wandb) (3.5.4+computecanada)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /home/iliaskar/.local/lib/python3.8/site-packages (from GitPython>=1.0.0->wandb) (4.0.9+computecanada)
+Requirement already satisfied: typing-extensions>=3.7.4.3; python_version < "3.10" in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from GitPython>=1.0.0->wandb) (3.10.0.0+computecanada)
+Requirement already satisfied: idna<4,>=2.5; python_version >= "3" in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from requests<3,>=2.0.0->wandb) (3.2+computecanada)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from requests<3,>=2.0.0->wandb) (1.26.6+computecanada)
+Requirement already satisfied: charset-normalizer~=2.0.0; python_version >= "3" in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from requests<3,>=2.0.0->wandb) (2.0.2+computecanada)
+Requirement already satisfied: certifi>=2017.4.17 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2021a/lib/python3.8/site-packages (from requests<3,>=2.0.0->wandb) (2021.5.30+computecanada)
+Requirement already satisfied: termcolor<2.0.0,>=1.1.0 in /home/iliaskar/.local/lib/python3.8/site-packages (from yaspin>=1.0.0->wandb) (1.1.0+computecanada)
+Requirement already satisfied: smmap<6,>=3.0.1 in /home/iliaskar/.local/lib/python3.8/site-packages (from gitdb<5,>=4.0.1->GitPython>=1.0.0->wandb) (5.0.0+computecanada)
+agents                                     : 8
+batch_size                                 : 4
+bottleneck_bits                            : 128
+bottleneck_noise                           : 0.1
+clip_grad_norm                             : 1.0
+compress_steps                             : 5
+device                                     : cuda
+done_on_last_rollout_step                  : True
+dropout                                    : 0.15
+env_name                                   : Freeway
+epochs                                     : 15
+world_model_steps                          : 10000
+agent_steps                                : 800
+experiment_name                            : 20-12-21-13:24:21
+filter_double_steps                        : 3
+frame_shape                                : (3, 105, 80)
+hidden_layers                              : 2
+hidden_size                                : 96
+input_noise                                : 0.05
+latent_rnn_max_sampling                    : 0.5
+latent_state_size                          : 128
+latent_use_max_probability                 : 0.8
+load_models                                : False
+noop_max                                   : 8
+ppo_gamma                                  : 0.99
+ppo_lr                                     : 0.0001
+recurrent_state_size                       : 64
+render_evaluation                          : False
+render_training                            : False
+residual_dropout                           : 0.5
+rollout_length                             : 100
+save_models                                : False
+scheduled_sampling_decay_steps             : 22250
+simulation_flip_first_random_for_beginning : True
+stacking                                   : 4
+stack_internal_states                      : True
+target_loss_clipping                       : 0.03
+trust_region_beta                          : 0.0001
+use_ppo_lr_decay                           : False
+use_stochastic_model                       : True
+use_wandb                                  : True
+policy_optimizer                           : reinforce
+wandb: Currently logged in as: iliaskarimalis (use `wandb login --relogin` to force relogin)
+wandb: Tracking run with wandb version 0.12.9
+wandb: Syncing run 20-12-21-13:24:21
+wandb:  View project at https://wandb.ai/iliaskarimalis/SimPLe
+wandb:  View run at https://wandb.ai/iliaskarimalis/SimPLe/runs/2wb8s86t
+wandb: Run data is saved locally in /project/6052292/iliaskar/model-based-atari/SimPLe/wandb/run-20211220_132440-2wb8s86t
+wandb: Run `wandb offline` to turn off syncing.
+
+Random exploration:   0% 0/6400 [00:00<?, ?it/s]Random exploration:   1% 36/6400 [00:00<00:17, 356.29it/s]Random exploration:   1% 78/6400 [00:00<00:16, 393.11it/s]Random exploration:   2% 120/6400 [00:00<00:15, 405.14it/s]Random exploration:   3% 162/6400 [00:00<00:15, 408.32it/s]Random exploration:   3% 203/6400 [00:00<00:15, 406.06it/s]Random exploration:   4% 246/6400 [00:00<00:14, 410.99it/s]Random exploration:   4% 288/6400 [00:00<00:14, 412.21it/s]Random exploration:   5% 330/6400 [00:00<00:14, 413.55it/s]Random exploration:   6% 373/6400 [00:00<00:14, 415.99it/s]Random exploration:   6% 415/6400 [00:01<00:14, 412.60it/s]Random exploration:   7% 458/6400 [00:01<00:14, 415.55it/s]Random exploration:   8% 500/6400 [00:01<00:14, 416.33it/s]Random exploration:   8% 542/6400 [00:01<00:14, 416.94it/s]Random exploration:   9% 584/6400 [00:01<00:13, 417.37it/s]Random exploration:  10% 626/6400 [00:01<00:13, 414.31it/s]Random exploration:  10% 668/6400 [00:01<00:13, 413.90it/s]Random exploration:  11% 710/6400 [00:01<00:13, 411.46it/s]Random exploration:  12% 752/6400 [00:01<00:13, 410.54it/s]Random exploration:  12% 794/6400 [00:01<00:13, 408.13it/s]Random exploration:  13% 835/6400 [00:02<00:13, 401.73it/s]Random exploration:  14% 876/6400 [00:02<00:17, 319.18it/s]Random exploration:  14% 917/6400 [00:02<00:16, 341.51it/s]Random exploration:  15% 958/6400 [00:02<00:15, 359.13it/s]Random exploration:  16% 998/6400 [00:02<00:14, 369.53it/s]Random exploration:  16% 1040/6400 [00:02<00:14, 381.19it/s]Random exploration:  17% 1081/6400 [00:02<00:13, 389.32it/s]Random exploration:  18% 1123/6400 [00:02<00:13, 395.42it/s]Random exploration:  18% 1164/6400 [00:02<00:13, 399.10it/s]Random exploration:  19% 1205/6400 [00:03<00:13, 396.55it/s]Random exploration:  19% 1246/6400 [00:03<00:12, 399.61it/s]Random exploration:  20% 1287/6400 [00:03<00:12, 402.31it/s]Random exploration:  21% 1328/6400 [00:03<00:12, 404.24it/s]Random exploration:  21% 1369/6400 [00:03<00:12, 405.53it/s]Random exploration:  22% 1410/6400 [00:03<00:12, 402.84it/s]Random exploration:  23% 1451/6400 [00:03<00:12, 396.01it/s]Random exploration:  23% 1493/6400 [00:03<00:12, 400.08it/s]Random exploration:  24% 1534/6400 [00:03<00:12, 402.37it/s]Random exploration:  25% 1575/6400 [00:03<00:11, 402.15it/s]Random exploration:  25% 1616/6400 [00:04<00:11, 400.82it/s]Random exploration:  26% 1657/6400 [00:04<00:11, 403.12it/s]Random exploration:  27% 1698/6400 [00:04<00:11, 404.99it/s]Random exploration:  27% 1739/6400 [00:04<00:11, 406.47it/s]Random exploration:  28% 1780/6400 [00:04<00:11, 407.04it/s]Random exploration:  28% 1821/6400 [00:04<00:11, 404.28it/s]Random exploration:  29% 1862/6400 [00:04<00:11, 405.69it/s]Random exploration:  30% 1903/6400 [00:04<00:11, 406.76it/s]Random exploration:  30% 1944/6400 [00:04<00:10, 407.38it/s]Random exploration:  31% 1985/6400 [00:04<00:10, 408.01it/s]Random exploration:  32% 2026/6400 [00:05<00:10, 404.42it/s]Random exploration:  32% 2067/6400 [00:05<00:14, 295.23it/s]Random exploration:  33% 2108/6400 [00:05<00:13, 322.02it/s]Random exploration:  34% 2148/6400 [00:05<00:12, 341.60it/s]Random exploration:  34% 2190/6400 [00:05<00:11, 360.24it/s]Random exploration:  35% 2231/6400 [00:05<00:11, 372.74it/s]Random exploration:  36% 2272/6400 [00:05<00:10, 382.51it/s]Random exploration:  36% 2314/6400 [00:05<00:10, 390.70it/s]Random exploration:  37% 2354/6400 [00:06<00:10, 389.98it/s]Random exploration:  37% 2395/6400 [00:06<00:10, 395.43it/s]Random exploration:  38% 2436/6400 [00:06<00:09, 399.30it/s]Random exploration:  39% 2477/6400 [00:06<00:09, 402.13it/s]Random exploration:  39% 2518/6400 [00:06<00:09, 404.13it/s]Random exploration:  40% 2559/6400 [00:06<00:09, 401.58it/s]Random exploration:  41% 2601/6400 [00:06<00:09, 404.38it/s]Random exploration:  41% 2642/6400 [00:06<00:09, 405.62it/s]Random exploration:  42% 2683/6400 [00:06<00:09, 406.87it/s]Random exploration:  43% 2725/6400 [00:06<00:09, 407.95it/s]Random exploration:  43% 2766/6400 [00:07<00:08, 404.20it/s]Random exploration:  44% 2807/6400 [00:07<00:08, 405.17it/s]Random exploration:  44% 2848/6400 [00:07<00:08, 404.83it/s]Random exploration:  45% 2889/6400 [00:07<00:08, 405.41it/s]Random exploration:  46% 2930/6400 [00:07<00:08, 406.65it/s]Random exploration:  46% 2971/6400 [00:07<00:08, 401.54it/s]Random exploration:  47% 3012/6400 [00:07<00:08, 404.03it/s]Random exploration:  48% 3053/6400 [00:07<00:08, 405.73it/s]Random exploration:  48% 3094/6400 [00:07<00:08, 406.78it/s]Random exploration:  49% 3135/6400 [00:07<00:08, 407.56it/s]Random exploration:  50% 3176/6400 [00:08<00:08, 401.38it/s]Random exploration:  50% 3217/6400 [00:08<00:07, 403.72it/s]Random exploration:  51% 3258/6400 [00:08<00:07, 405.23it/s]Random exploration:  52% 3299/6400 [00:08<00:07, 404.01it/s]Random exploration:  52% 3340/6400 [00:08<00:07, 405.59it/s]Random exploration:  53% 3381/6400 [00:08<00:07, 402.66it/s]Random exploration:  53% 3422/6400 [00:08<00:07, 404.66it/s]Random exploration:  54% 3463/6400 [00:08<00:07, 405.89it/s]Random exploration:  55% 3505/6400 [00:08<00:07, 407.41it/s]Random exploration:  55% 3546/6400 [00:08<00:06, 408.05it/s]Random exploration:  56% 3587/6400 [00:09<00:06, 404.03it/s]Random exploration:  57% 3628/6400 [00:09<00:06, 405.69it/s]Random exploration:  57% 3669/6400 [00:09<00:06, 406.47it/s]Random exploration:  58% 3710/6400 [00:09<00:06, 404.94it/s]Random exploration:  59% 3751/6400 [00:09<00:06, 406.33it/s]Random exploration:  59% 3792/6400 [00:09<00:06, 403.40it/s]Random exploration:  60% 3833/6400 [00:09<00:06, 400.10it/s]Random exploration:  61% 3874/6400 [00:09<00:06, 402.86it/s]Random exploration:  61% 3915/6400 [00:09<00:06, 397.00it/s]Random exploration:  62% 3955/6400 [00:09<00:06, 383.29it/s]Random exploration:  62% 3994/6400 [00:10<00:06, 384.28it/s]Random exploration:  63% 4035/6400 [00:10<00:06, 391.47it/s]Random exploration:  64% 4076/6400 [00:10<00:05, 396.74it/s]Random exploration:  64% 4116/6400 [00:10<00:07, 291.73it/s]Random exploration:  65% 4156/6400 [00:10<00:07, 317.05it/s]Random exploration:  66% 4197/6400 [00:10<00:06, 340.14it/s]Random exploration:  66% 4238/6400 [00:10<00:06, 358.37it/s]Random exploration:  67% 4279/6400 [00:10<00:05, 372.51it/s]Random exploration:  67% 4319/6400 [00:11<00:05, 378.72it/s]Random exploration:  68% 4359/6400 [00:11<00:05, 383.22it/s]Random exploration:  69% 4400/6400 [00:11<00:05, 390.89it/s]Random exploration:  69% 4441/6400 [00:11<00:04, 396.22it/s]Random exploration:  70% 4482/6400 [00:11<00:04, 400.01it/s]Random exploration:  71% 4523/6400 [00:11<00:04, 402.80it/s]Random exploration:  71% 4564/6400 [00:11<00:04, 400.71it/s]Random exploration:  72% 4605/6400 [00:11<00:04, 403.19it/s]Random exploration:  73% 4646/6400 [00:11<00:04, 405.17it/s]Random exploration:  73% 4687/6400 [00:11<00:04, 406.18it/s]Random exploration:  74% 4728/6400 [00:12<00:04, 403.31it/s]Random exploration:  75% 4769/6400 [00:12<00:04, 401.53it/s]Random exploration:  75% 4811/6400 [00:12<00:03, 404.18it/s]Random exploration:  76% 4852/6400 [00:12<00:03, 398.81it/s]Random exploration:  76% 4894/6400 [00:12<00:03, 402.28it/s]Random exploration:  77% 4936/6400 [00:12<00:03, 404.68it/s]Random exploration:  78% 4977/6400 [00:12<00:03, 402.44it/s]Random exploration:  78% 5018/6400 [00:12<00:03, 402.00it/s]Random exploration:  79% 5059/6400 [00:12<00:03, 404.14it/s]Random exploration:  80% 5100/6400 [00:12<00:03, 405.69it/s]Random exploration:  80% 5141/6400 [00:13<00:03, 406.68it/s]Random exploration:  81% 5182/6400 [00:13<00:03, 403.33it/s]Random exploration:  82% 5223/6400 [00:13<00:02, 404.92it/s]Random exploration:  82% 5264/6400 [00:13<00:02, 406.17it/s]Random exploration:  83% 5306/6400 [00:13<00:02, 407.64it/s]Random exploration:  84% 5348/6400 [00:13<00:02, 408.39it/s]Random exploration:  84% 5389/6400 [00:13<00:02, 403.96it/s]Random exploration:  85% 5430/6400 [00:13<00:02, 405.21it/s]Random exploration:  86% 5472/6400 [00:13<00:02, 406.67it/s]Random exploration:  86% 5513/6400 [00:13<00:02, 407.34it/s]Random exploration:  87% 5554/6400 [00:14<00:02, 403.94it/s]Random exploration:  87% 5595/6400 [00:14<00:01, 402.96it/s]Random exploration:  88% 5636/6400 [00:14<00:01, 404.71it/s]Random exploration:  89% 5677/6400 [00:14<00:01, 406.12it/s]Random exploration:  89% 5719/6400 [00:14<00:01, 407.33it/s]Random exploration:  90% 5760/6400 [00:14<00:01, 407.98it/s]Random exploration:  91% 5801/6400 [00:14<00:01, 404.93it/s]Random exploration:  91% 5842/6400 [00:14<00:01, 406.11it/s]Random exploration:  92% 5883/6400 [00:14<00:01, 406.93it/s]Random exploration:  93% 5924/6400 [00:14<00:01, 407.33it/s]Random exploration:  93% 5965/6400 [00:15<00:01, 407.97it/s]Random exploration:  94% 6006/6400 [00:15<00:00, 405.34it/s]Random exploration:  94% 6047/6400 [00:15<00:00, 406.55it/s]Random exploration:  95% 6089/6400 [00:15<00:00, 407.80it/s]Random exploration:  96% 6131/6400 [00:15<00:00, 408.44it/s]Random exploration:  96% 6172/6400 [00:15<00:00, 300.89it/s]Random exploration:  97% 6213/6400 [00:15<00:00, 326.42it/s]Random exploration:  98% 6254/6400 [00:15<00:00, 347.47it/s]Random exploration:  98% 6295/6400 [00:15<00:00, 363.90it/s]Random exploration:  99% 6335/6400 [00:16<00:00, 373.73it/s]Random exploration: 100% 6375/6400 [00:16<00:00, 379.80it/s]Random exploration: 100% 6400/6400 [00:16<00:00, 393.67it/s]
+Epoch:   0% 0/15 [00:00<?, ?it/s]
+Collecting interactions:   0% 0/6400 [00:00<?, ?it/s][A
+Collecting interactions:   0% 1/6400 [00:02<4:21:53,  2.46s/it][A
+Collecting interactions:   0% 28/6400 [00:02<06:59, 15.20it/s] [A
+Collecting interactions:   1% 55/6400 [00:02<03:08, 33.64it/s][A
+Collecting interactions:   1% 81/6400 [00:02<01:55, 54.84it/s][A
+Collecting interactions:   2% 107/6400 [00:02<01:19, 78.74it/s][A
+Collecting interactions:   2% 133/6400 [00:02<00:59, 104.63it/s][A
+Collecting interactions:   2% 159/6400 [00:03<00:47, 130.89it/s][A
+Collecting interactions:   3% 185/6400 [00:03<00:39, 155.65it/s][A
+Collecting interactions:   3% 211/6400 [00:03<00:34, 177.89it/s][A
+Collecting interactions:   4% 237/6400 [00:03<00:31, 194.99it/s][A
+Collecting interactions:   4% 263/6400 [00:03<00:29, 210.60it/s][A
+Collecting interactions:   5% 289/6400 [00:03<00:27, 222.83it/s][A
+Collecting interactions:   5% 315/6400 [00:03<00:26, 231.26it/s][A
+Collecting interactions:   5% 341/6400 [00:03<00:25, 236.52it/s][A
+Collecting interactions:   6% 367/6400 [00:03<00:25, 239.72it/s][A
+Collecting interactions:   6% 393/6400 [00:03<00:24, 244.47it/s][A
+Collecting interactions:   7% 419/6400 [00:04<00:24, 247.93it/s][A
+Collecting interactions:   7% 445/6400 [00:04<00:23, 250.46it/s][A
+Collecting interactions:   7% 471/6400 [00:04<00:23, 252.25it/s][A
+Collecting interactions:   8% 497/6400 [00:04<00:23, 251.21it/s][A
+Collecting interactions:   8% 523/6400 [00:04<00:23, 252.91it/s][A
+Collecting interactions:   9% 549/6400 [00:04<00:23, 253.88it/s][A
+Collecting interactions:   9% 575/6400 [00:04<00:22, 255.04it/s][A
+Collecting interactions:   9% 601/6400 [00:04<00:22, 254.96it/s][A
+Collecting interactions:  10% 627/6400 [00:04<00:22, 253.00it/s][A
+Collecting interactions:  10% 653/6400 [00:05<00:25, 222.27it/s][A
+Collecting interactions:  11% 679/6400 [00:05<00:24, 231.68it/s][A
+Collecting interactions:  11% 705/6400 [00:05<00:23, 239.03it/s][A
+Collecting interactions:  11% 731/6400 [00:05<00:23, 244.22it/s][A
+Collecting interactions:  12% 756/6400 [00:05<00:22, 245.59it/s][A
+Collecting interactions:  12% 782/6400 [00:05<00:22, 248.02it/s][A
+Collecting interactions:  13% 808/6400 [00:05<00:22, 250.68it/s][A
+Collecting interactions:  13% 834/6400 [00:05<00:22, 252.36it/s][A
+Collecting interactions:  13% 860/6400 [00:05<00:21, 252.52it/s][A
+Collecting interactions:  14% 886/6400 [00:05<00:21, 251.12it/s][A
+Collecting interactions:  14% 912/6400 [00:06<00:21, 252.79it/s][A
+Collecting interactions:  15% 938/6400 [00:06<00:21, 254.24it/s][A
+Collecting interactions:  15% 964/6400 [00:06<00:21, 255.35it/s][A
+Collecting interactions:  15% 990/6400 [00:06<00:21, 256.13it/s][A
+Collecting interactions:  16% 1016/6400 [00:06<00:21, 253.54it/s][A
+Collecting interactions:  16% 1042/6400 [00:06<00:21, 254.68it/s][A
+Collecting interactions:  17% 1068/6400 [00:06<00:20, 256.05it/s][A
+Collecting interactions:  17% 1094/6400 [00:06<00:20, 256.58it/s][A
+Collecting interactions:  18% 1120/6400 [00:06<00:20, 256.84it/s][A
+Collecting interactions:  18% 1146/6400 [00:06<00:20, 254.40it/s][A
+Collecting interactions:  18% 1172/6400 [00:07<00:20, 255.18it/s][A
+Collecting interactions:  19% 1198/6400 [00:07<00:20, 256.11it/s][A
+Collecting interactions:  19% 1224/6400 [00:07<00:20, 256.38it/s][A
+Collecting interactions:  20% 1250/6400 [00:07<00:20, 255.21it/s][A
+Collecting interactions:  20% 1276/6400 [00:07<00:20, 255.97it/s][A
+Collecting interactions:  20% 1302/6400 [00:07<00:19, 256.97it/s][A
+Collecting interactions:  21% 1328/6400 [00:07<00:19, 257.26it/s][A
+Collecting interactions:  21% 1354/6400 [00:07<00:19, 255.88it/s][A
+Collecting interactions:  22% 1380/6400 [00:07<00:19, 253.18it/s][A
+Collecting interactions:  22% 1406/6400 [00:08<00:19, 254.80it/s][A
+Collecting interactions:  22% 1432/6400 [00:08<00:19, 255.76it/s][A
+Collecting interactions:  23% 1458/6400 [00:08<00:19, 256.28it/s][A
+Collecting interactions:  23% 1484/6400 [00:08<00:19, 257.08it/s][A
+Collecting interactions:  24% 1510/6400 [00:08<00:19, 254.07it/s][A
+Collecting interactions:  24% 1536/6400 [00:08<00:19, 255.50it/s][A
+Collecting interactions:  24% 1562/6400 [00:08<00:19, 254.56it/s][A
+Collecting interactions:  25% 1588/6400 [00:08<00:18, 254.99it/s][A
+Collecting interactions:  25% 1614/6400 [00:08<00:18, 255.37it/s][A
+Collecting interactions:  26% 1640/6400 [00:08<00:18, 252.97it/s][A
+Collecting interactions:  26% 1666/6400 [00:09<00:18, 254.32it/s][A
+Collecting interactions:  26% 1692/6400 [00:09<00:18, 255.06it/s][A
+Collecting interactions:  27% 1718/6400 [00:09<00:18, 255.76it/s][A
+Collecting interactions:  27% 1744/6400 [00:09<00:18, 256.33it/s][A
+Collecting interactions:  28% 1770/6400 [00:09<00:18, 253.74it/s][A
+Collecting interactions:  28% 1796/6400 [00:09<00:18, 254.69it/s][A
+Collecting interactions:  28% 1822/6400 [00:09<00:17, 255.94it/s][A
+Collecting interactions:  29% 1848/6400 [00:09<00:17, 256.38it/s][A
+Collecting interactions:  29% 1874/6400 [00:09<00:17, 255.29it/s][A
+Collecting interactions:  30% 1900/6400 [00:09<00:17, 252.85it/s][A
+Collecting interactions:  30% 1926/6400 [00:10<00:17, 254.13it/s][A
+Collecting interactions:  30% 1952/6400 [00:10<00:17, 255.17it/s][A
+Collecting interactions:  31% 1978/6400 [00:10<00:17, 255.99it/s][A
+Collecting interactions:  31% 2004/6400 [00:10<00:17, 256.44it/s][A
+Collecting interactions:  32% 2030/6400 [00:10<00:17, 254.10it/s][A
+Collecting interactions:  32% 2056/6400 [00:10<00:23, 188.66it/s][A
+Collecting interactions:  33% 2082/6400 [00:10<00:21, 205.31it/s][A
+Collecting interactions:  33% 2108/6400 [00:10<00:19, 218.80it/s][A
+Collecting interactions:  33% 2134/6400 [00:10<00:18, 227.62it/s][A
+Collecting interactions:  34% 2160/6400 [00:11<00:17, 236.11it/s][A
+Collecting interactions:  34% 2186/6400 [00:11<00:17, 242.17it/s][A
+Collecting interactions:  35% 2212/6400 [00:11<00:16, 246.51it/s][A
+Collecting interactions:  35% 2238/6400 [00:11<00:16, 249.48it/s][A
+Collecting interactions:  35% 2264/6400 [00:11<00:16, 249.40it/s][A
+Collecting interactions:  36% 2290/6400 [00:11<00:16, 251.55it/s][A
+Collecting interactions:  36% 2316/6400 [00:11<00:16, 253.14it/s][A
+Collecting interactions:  37% 2342/6400 [00:11<00:15, 254.12it/s][A
+Collecting interactions:  37% 2368/6400 [00:11<00:15, 253.36it/s][A
+Collecting interactions:  37% 2394/6400 [00:12<00:15, 251.57it/s][A
+Collecting interactions:  38% 2420/6400 [00:12<00:15, 253.30it/s][A
+Collecting interactions:  38% 2446/6400 [00:12<00:15, 254.38it/s][A
+Collecting interactions:  39% 2472/6400 [00:12<00:15, 255.58it/s][A
+Collecting interactions:  39% 2498/6400 [00:12<00:15, 256.65it/s][A
+Collecting interactions:  39% 2524/6400 [00:12<00:15, 254.31it/s][A
+Collecting interactions:  40% 2550/6400 [00:12<00:15, 255.27it/s][A
+Collecting interactions:  40% 2576/6400 [00:12<00:14, 256.09it/s][A
+Collecting interactions:  41% 2602/6400 [00:12<00:14, 255.90it/s][A
+Collecting interactions:  41% 2628/6400 [00:12<00:14, 256.89it/s][A
+Collecting interactions:  41% 2654/6400 [00:13<00:14, 254.21it/s][A
+Collecting interactions:  42% 2680/6400 [00:13<00:14, 254.98it/s][A
+Collecting interactions:  42% 2706/6400 [00:13<00:14, 256.08it/s][A
+Collecting interactions:  43% 2732/6400 [00:13<00:14, 256.61it/s][A
+Collecting interactions:  43% 2758/6400 [00:13<00:14, 257.20it/s][A
+Collecting interactions:  44% 2784/6400 [00:13<00:14, 254.44it/s][A
+Collecting interactions:  44% 2810/6400 [00:13<00:14, 255.36it/s][A
+Collecting interactions:  44% 2836/6400 [00:13<00:13, 255.25it/s][A
+Collecting interactions:  45% 2862/6400 [00:13<00:13, 254.32it/s][A
+Collecting interactions:  45% 2888/6400 [00:13<00:13, 255.54it/s][A
+Collecting interactions:  46% 2914/6400 [00:14<00:13, 252.98it/s][A
+Collecting interactions:  46% 2940/6400 [00:14<00:13, 254.56it/s][A
+Collecting interactions:  46% 2966/6400 [00:14<00:13, 255.25it/s][A
+Collecting interactions:  47% 2992/6400 [00:14<00:13, 256.20it/s][A
+Collecting interactions:  47% 3018/6400 [00:14<00:13, 256.78it/s][A
+Collecting interactions:  48% 3044/6400 [00:14<00:13, 253.93it/s][A
+Collecting interactions:  48% 3070/6400 [00:14<00:13, 255.36it/s][A
+Collecting interactions:  48% 3096/6400 [00:14<00:12, 256.00it/s][A
+Collecting interactions:  49% 3122/6400 [00:14<00:12, 255.67it/s][A
+Collecting interactions:  49% 3148/6400 [00:14<00:12, 256.27it/s][A
+Collecting interactions:  50% 3174/6400 [00:15<00:12, 253.97it/s][A
+Collecting interactions:  50% 3200/6400 [00:15<00:12, 254.83it/s][A
+Collecting interactions:  50% 3226/6400 [00:15<00:12, 255.80it/s][A
+Collecting interactions:  51% 3252/6400 [00:15<00:12, 256.22it/s][A
+Collecting interactions:  51% 3278/6400 [00:15<00:12, 256.70it/s][A
+Collecting interactions:  52% 3304/6400 [00:15<00:12, 254.56it/s][A
+Collecting interactions:  52% 3330/6400 [00:15<00:12, 255.74it/s][A
+Collecting interactions:  52% 3356/6400 [00:15<00:11, 256.03it/s][A
+Collecting interactions:  53% 3382/6400 [00:15<00:11, 255.00it/s][A
+Collecting interactions:  53% 3408/6400 [00:15<00:11, 255.44it/s][A
+Collecting interactions:  54% 3434/6400 [00:16<00:11, 253.80it/s][A
+Collecting interactions:  54% 3460/6400 [00:16<00:11, 254.79it/s][A
+Collecting interactions:  54% 3486/6400 [00:16<00:11, 255.59it/s][A
+Collecting interactions:  55% 3512/6400 [00:16<00:11, 256.05it/s][A
+Collecting interactions:  55% 3538/6400 [00:16<00:11, 256.64it/s][A
+Collecting interactions:  56% 3564/6400 [00:16<00:11, 254.08it/s][A
+Collecting interactions:  56% 3590/6400 [00:16<00:11, 255.30it/s][A
+Collecting interactions:  56% 3616/6400 [00:16<00:10, 255.81it/s][A
+Collecting interactions:  57% 3642/6400 [00:16<00:10, 256.31it/s][A
+Collecting interactions:  57% 3668/6400 [00:16<00:10, 255.66it/s][A
+Collecting interactions:  58% 3694/6400 [00:17<00:10, 253.20it/s][A
+Collecting interactions:  58% 3720/6400 [00:17<00:10, 254.41it/s][A
+Collecting interactions:  59% 3746/6400 [00:17<00:10, 255.59it/s][A
+Collecting interactions:  59% 3772/6400 [00:17<00:10, 256.12it/s][A
+Collecting interactions:  59% 3798/6400 [00:17<00:10, 256.71it/s][A
+Collecting interactions:  60% 3824/6400 [00:17<00:10, 254.21it/s][A
+Collecting interactions:  60% 3850/6400 [00:17<00:09, 255.19it/s][A
+Collecting interactions:  61% 3876/6400 [00:17<00:09, 255.91it/s][A
+Collecting interactions:  61% 3902/6400 [00:17<00:09, 255.07it/s][A
+Collecting interactions:  61% 3928/6400 [00:18<00:09, 255.62it/s][A
+Collecting interactions:  62% 3954/6400 [00:18<00:09, 253.50it/s][A
+Collecting interactions:  62% 3980/6400 [00:18<00:09, 254.50it/s][A
+Collecting interactions:  63% 4006/6400 [00:18<00:09, 255.36it/s][A
+Collecting interactions:  63% 4032/6400 [00:18<00:09, 255.40it/s][A
+Collecting interactions:  63% 4058/6400 [00:18<00:09, 255.91it/s][A
+Collecting interactions:  64% 4084/6400 [00:18<00:09, 255.29it/s][A
+Collecting interactions:  64% 4110/6400 [00:18<00:11, 192.44it/s][A
+Collecting interactions:  65% 4133/6400 [00:18<00:11, 200.44it/s][A
+Collecting interactions:  65% 4159/6400 [00:19<00:10, 214.50it/s][A
+Collecting interactions:  65% 4185/6400 [00:19<00:09, 224.57it/s][A
+Collecting interactions:  66% 4211/6400 [00:19<00:09, 233.82it/s][A
+Collecting interactions:  66% 4237/6400 [00:19<00:08, 240.72it/s][A
+Collecting interactions:  67% 4263/6400 [00:19<00:08, 245.36it/s][A
+Collecting interactions:  67% 4289/6400 [00:19<00:08, 248.62it/s][A
+Collecting interactions:  67% 4315/6400 [00:19<00:08, 248.62it/s][A
+Collecting interactions:  68% 4341/6400 [00:19<00:08, 251.00it/s][A
+Collecting interactions:  68% 4367/6400 [00:19<00:08, 252.61it/s][A
+Collecting interactions:  69% 4393/6400 [00:19<00:07, 252.06it/s][A
+Collecting interactions:  69% 4419/6400 [00:20<00:07, 250.87it/s][A
+Collecting interactions:  69% 4445/6400 [00:20<00:07, 252.68it/s][A
+Collecting interactions:  70% 4471/6400 [00:20<00:07, 253.97it/s][A
+Collecting interactions:  70% 4497/6400 [00:20<00:07, 254.76it/s][A
+Collecting interactions:  71% 4523/6400 [00:20<00:07, 255.32it/s][A
+Collecting interactions:  71% 4549/6400 [00:20<00:07, 253.00it/s][A
+Collecting interactions:  71% 4575/6400 [00:20<00:07, 254.61it/s][A
+Collecting interactions:  72% 4601/6400 [00:20<00:07, 255.75it/s][A
+Collecting interactions:  72% 4627/6400 [00:20<00:06, 256.31it/s][A
+Collecting interactions:  73% 4653/6400 [00:20<00:06, 256.77it/s][A
+Collecting interactions:  73% 4679/6400 [00:21<00:06, 254.29it/s][A
+Collecting interactions:  74% 4705/6400 [00:21<00:06, 254.66it/s][A
+Collecting interactions:  74% 4731/6400 [00:21<00:06, 255.38it/s][A
+Collecting interactions:  74% 4757/6400 [00:21<00:06, 256.20it/s][A
+Collecting interactions:  75% 4783/6400 [00:21<00:06, 256.71it/s][A
+Collecting interactions:  75% 4809/6400 [00:21<00:06, 254.23it/s][A
+Collecting interactions:  76% 4835/6400 [00:21<00:06, 255.11it/s][A
+Collecting interactions:  76% 4861/6400 [00:21<00:06, 255.80it/s][A
+Collecting interactions:  76% 4887/6400 [00:21<00:05, 255.35it/s][A
+Collecting interactions:  77% 4913/6400 [00:21<00:05, 255.79it/s][A
+Collecting interactions:  77% 4939/6400 [00:22<00:05, 253.69it/s][A
+Collecting interactions:  78% 4965/6400 [00:22<00:05, 254.93it/s][A
+Collecting interactions:  78% 4991/6400 [00:22<00:05, 255.85it/s][A
+Collecting interactions:  78% 5017/6400 [00:22<00:05, 256.33it/s][A
+Collecting interactions:  79% 5043/6400 [00:22<00:05, 256.69it/s][A
+Collecting interactions:  79% 5069/6400 [00:22<00:05, 254.26it/s][A
+Collecting interactions:  80% 5095/6400 [00:22<00:05, 255.77it/s][A
+Collecting interactions:  80% 5121/6400 [00:22<00:04, 256.20it/s][A
+Collecting interactions:  80% 5147/6400 [00:22<00:04, 256.45it/s][A
+Collecting interactions:  81% 5173/6400 [00:23<00:04, 256.80it/s][A
+Collecting interactions:  81% 5199/6400 [00:23<00:04, 254.22it/s][A
+Collecting interactions:  82% 5225/6400 [00:23<00:04, 255.46it/s][A
+Collecting interactions:  82% 5251/6400 [00:23<00:04, 256.10it/s][A
+Collecting interactions:  82% 5277/6400 [00:23<00:04, 256.48it/s][A
+Collecting interactions:  83% 5303/6400 [00:23<00:04, 256.57it/s][A
+Collecting interactions:  83% 5329/6400 [00:23<00:04, 254.13it/s][A
+Collecting interactions:  84% 5355/6400 [00:23<00:04, 254.23it/s][A
+Collecting interactions:  84% 5381/6400 [00:23<00:03, 255.31it/s][A
+Collecting interactions:  84% 5407/6400 [00:23<00:03, 254.25it/s][A
+Collecting interactions:  85% 5433/6400 [00:24<00:03, 255.35it/s][A
+Collecting interactions:  85% 5459/6400 [00:24<00:03, 252.95it/s][A
+Collecting interactions:  86% 5485/6400 [00:24<00:03, 254.38it/s][A
+Collecting interactions:  86% 5511/6400 [00:24<00:03, 254.20it/s][A
+Collecting interactions:  87% 5537/6400 [00:24<00:03, 255.11it/s][A
+Collecting interactions:  87% 5563/6400 [00:24<00:03, 255.93it/s][A
+Collecting interactions:  87% 5589/6400 [00:24<00:03, 253.48it/s][A
+Collecting interactions:  88% 5615/6400 [00:24<00:03, 252.37it/s][A
+Collecting interactions:  88% 5641/6400 [00:24<00:02, 253.62it/s][A
+Collecting interactions:  89% 5667/6400 [00:24<00:02, 254.91it/s][A
+Collecting interactions:  89% 5693/6400 [00:25<00:02, 255.55it/s][A
+Collecting interactions:  89% 5719/6400 [00:25<00:02, 251.26it/s][A
+Collecting interactions:  90% 5745/6400 [00:25<00:02, 252.99it/s][A
+Collecting interactions:  90% 5771/6400 [00:25<00:02, 253.44it/s][A
+Collecting interactions:  91% 5797/6400 [00:25<00:02, 254.72it/s][A
+Collecting interactions:  91% 5823/6400 [00:25<00:02, 255.48it/s][A
+Collecting interactions:  91% 5849/6400 [00:25<00:02, 229.55it/s][A
+Collecting interactions:  92% 5873/6400 [00:25<00:02, 229.15it/s][A
+Collecting interactions:  92% 5898/6400 [00:25<00:02, 234.86it/s][A
+Collecting interactions:  93% 5924/6400 [00:26<00:01, 241.31it/s][A
+Collecting interactions:  93% 5950/6400 [00:26<00:01, 246.37it/s][A
+Collecting interactions:  93% 5975/6400 [00:26<00:01, 246.50it/s][A
+Collecting interactions:  94% 6001/6400 [00:26<00:01, 249.85it/s][A
+Collecting interactions:  94% 6027/6400 [00:26<00:01, 252.51it/s][A
+Collecting interactions:  95% 6053/6400 [00:26<00:01, 253.90it/s][A
+Collecting interactions:  95% 6079/6400 [00:26<00:01, 255.40it/s][A
+Collecting interactions:  95% 6105/6400 [00:26<00:01, 252.98it/s][A
+Collecting interactions:  96% 6131/6400 [00:26<00:01, 254.26it/s][A
+Collecting interactions:  96% 6157/6400 [00:27<00:01, 193.10it/s][A
+Collecting interactions:  97% 6183/6400 [00:27<00:01, 209.03it/s][A
+Collecting interactions:  97% 6209/6400 [00:27<00:00, 220.06it/s][A
+Collecting interactions:  97% 6235/6400 [00:27<00:00, 230.31it/s][A
+Collecting interactions:  98% 6261/6400 [00:27<00:00, 238.08it/s][A
+Collecting interactions:  98% 6287/6400 [00:27<00:00, 243.63it/s][A
+Collecting interactions:  99% 6313/6400 [00:27<00:00, 247.70it/s][A
+Collecting interactions:  99% 6339/6400 [00:27<00:00, 247.78it/s][A
+Collecting interactions:  99% 6365/6400 [00:27<00:00, 250.56it/s][A
+Collecting interactions: 100% 6391/6400 [00:27<00:00, 250.78it/s][ACollecting interactions: 100% 6400/6400 [00:27<00:00, 228.73it/s]
+
+Training world model:   0% 0/30000 [00:00<?, ?it/s][A/project/6052292/iliaskar/model-based-atari/SimPLe/simple/utils.py:117: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  x_labels = [torch.remainder(x_l // 2 ** i, 2) for i in range(num_bits)]
+
+Training world model:   0% 0/30000 [00:21<?, ?it/s, loss=6.37, loss_reconstruct=3.06, loss_value=3.09, loss_reward=0.131, loss_trust_region=0.093, loss_lstm=3.7e-6][A
+Training world model:   0% 100/30000 [00:21<1:46:29,  4.68it/s, loss=6.37, loss_reconstruct=3.06, loss_value=3.09, loss_reward=0.131, loss_trust_region=0.093, loss_lstm=3.7e-6][A
+Training world model:   0% 100/30000 [00:43<1:46:29,  4.68it/s, loss=0.252, loss_reconstruct=0.0955, loss_value=0.108, loss_reward=5.57e-5, loss_trust_region=0.0485, loss_lstm=2.6e-6][A
+Training world model:   1% 200/30000 [00:43<1:48:59,  4.56it/s, loss=0.252, loss_reconstruct=0.0955, loss_value=0.108, loss_reward=5.57e-5, loss_trust_region=0.0485, loss_lstm=2.6e-6][A
+Training world model:   1% 200/30000 [01:04<1:48:59,  4.56it/s, loss=0.162, loss_reconstruct=0.0317, loss_value=0.0821, loss_reward=3.59e-6, loss_trust_region=0.0484, loss_lstm=3.02e-6][A
+Training world model:   1% 300/30000 [01:04<1:46:19,  4.66it/s, loss=0.162, loss_reconstruct=0.0317, loss_value=0.0821, loss_reward=3.59e-6, loss_trust_region=0.0484, loss_lstm=3.02e-6][A
+Training world model:   1% 300/30000 [01:25<1:46:19,  4.66it/s, loss=0.107, loss_reconstruct=0.0196, loss_value=0.0499, loss_reward=2.99e-7, loss_trust_region=0.0373, loss_lstm=3.53e-6][A
+Training world model:   1% 400/30000 [01:25<1:44:47,  4.71it/s, loss=0.107, loss_reconstruct=0.0196, loss_value=0.0499, loss_reward=2.99e-7, loss_trust_region=0.0373, loss_lstm=3.53e-6][A
+Training world model:   1% 400/30000 [01:46<1:44:47,  4.71it/s, loss=0.0989, loss_reconstruct=0.0155, loss_value=0.0461, loss_reward=0, loss_trust_region=0.0373, loss_lstm=4.68e-6]     [A
+Training world model:   2% 500/30000 [01:46<1:43:48,  4.74it/s, loss=0.0989, loss_reconstruct=0.0155, loss_value=0.0461, loss_reward=0, loss_trust_region=0.0373, loss_lstm=4.68e-6][A
+Training world model:   2% 500/30000 [02:07<1:43:48,  4.74it/s, loss=0.0973, loss_reconstruct=0.012, loss_value=0.0381, loss_reward=0, loss_trust_region=0.0472, loss_lstm=5.55e-6] [A
+Training world model:   2% 600/30000 [02:07<1:42:59,  4.76it/s, loss=0.0973, loss_reconstruct=0.012, loss_value=0.0381, loss_reward=0, loss_trust_region=0.0472, loss_lstm=5.55e-6][A
+Training world model:   2% 600/30000 [02:28<1:42:59,  4.76it/s, loss=0.126, loss_reconstruct=0.00997, loss_value=0.0405, loss_reward=0, loss_trust_region=0.0756, loss_lstm=6.69e-6][A
+Training world model:   2% 700/30000 [02:28<1:42:26,  4.77it/s, loss=0.126, loss_reconstruct=0.00997, loss_value=0.0405, loss_reward=0, loss_trust_region=0.0756, loss_lstm=6.69e-6][A
+Training world model:   2% 700/30000 [02:49<1:42:26,  4.77it/s, loss=0.103, loss_reconstruct=0.00713, loss_value=0.038, loss_reward=0, loss_trust_region=0.0574, loss_lstm=7.16e-6] [A
+Training world model:   3% 800/30000 [02:49<1:41:58,  4.77it/s, loss=0.103, loss_reconstruct=0.00713, loss_value=0.038, loss_reward=0, loss_trust_region=0.0574, loss_lstm=7.16e-6][A
+Training world model:   3% 800/30000 [03:09<1:41:58,  4.77it/s, loss=0.117, loss_reconstruct=0.00833, loss_value=0.0454, loss_reward=0, loss_trust_region=0.0635, loss_lstm=7.66e-6][A
+Training world model:   3% 900/30000 [03:09<1:41:33,  4.78it/s, loss=0.117, loss_reconstruct=0.00833, loss_value=0.0454, loss_reward=0, loss_trust_region=0.0635, loss_lstm=7.66e-6][A
+Training world model:   3% 900/30000 [03:30<1:41:33,  4.78it/s, loss=0.0679, loss_reconstruct=0.0049, loss_value=0.035, loss_reward=0, loss_trust_region=0.0279, loss_lstm=8.65e-6] [A
+Training world model:   3% 1000/30000 [03:30<1:41:17,  4.77it/s, loss=0.0679, loss_reconstruct=0.0049, loss_value=0.035, loss_reward=0, loss_trust_region=0.0279, loss_lstm=8.65e-6][A
+Training world model:   3% 1000/30000 [03:51<1:41:17,  4.77it/s, loss=0.0726, loss_reconstruct=0.00769, loss_value=0.0339, loss_reward=0, loss_trust_region=0.031, loss_lstm=8.75e-6][A
+Training world model:   4% 1100/30000 [03:51<1:40:52,  4.78it/s, loss=0.0726, loss_reconstruct=0.00769, loss_value=0.0339, loss_reward=0, loss_trust_region=0.031, loss_lstm=8.75e-6][A
+Training world model:   4% 1100/30000 [04:12<1:40:52,  4.78it/s, loss=0.0666, loss_reconstruct=0.00572, loss_value=0.0326, loss_reward=0, loss_trust_region=0.0282, loss_lstm=9.12e-6][A
+Training world model:   4% 1200/30000 [04:12<1:40:24,  4.78it/s, loss=0.0666, loss_reconstruct=0.00572, loss_value=0.0326, loss_reward=0, loss_trust_region=0.0282, loss_lstm=9.12e-6][A
+Training world model:   4% 1200/30000 [04:33<1:40:24,  4.78it/s, loss=0.0528, loss_reconstruct=0.00942, loss_value=0.0356, loss_reward=0, loss_trust_region=0.00785, loss_lstm=9.22e-6][A
+Training world model:   4% 1300/30000 [04:33<1:40:01,  4.78it/s, loss=0.0528, loss_reconstruct=0.00942, loss_value=0.0356, loss_reward=0, loss_trust_region=0.00785, loss_lstm=9.22e-6][A
+Training world model:   4% 1300/30000 [04:54<1:40:01,  4.78it/s, loss=0.0537, loss_reconstruct=0.0044, loss_value=0.0336, loss_reward=0, loss_trust_region=0.0157, loss_lstm=1.05e-5]  [A
+Training world model:   5% 1400/30000 [04:54<1:39:43,  4.78it/s, loss=0.0537, loss_reconstruct=0.0044, loss_value=0.0336, loss_reward=0, loss_trust_region=0.0157, loss_lstm=1.05e-5][A
+Training world model:   5% 1400/30000 [05:15<1:39:43,  4.78it/s, loss=0.0826, loss_reconstruct=0.00511, loss_value=0.0324, loss_reward=0, loss_trust_region=0.0451, loss_lstm=1.04e-5][A
+Training world model:   5% 1500/30000 [05:15<1:39:30,  4.77it/s, loss=0.0826, loss_reconstruct=0.00511, loss_value=0.0324, loss_reward=0, loss_trust_region=0.0451, loss_lstm=1.04e-5][A
+Training world model:   5% 1500/30000 [05:36<1:39:30,  4.77it/s, loss=0.0566, loss_reconstruct=0.0061, loss_value=0.0286, loss_reward=0, loss_trust_region=0.022, loss_lstm=1.1e-5]   [A
+Training world model:   5% 1600/30000 [05:36<1:39:06,  4.78it/s, loss=0.0566, loss_reconstruct=0.0061, loss_value=0.0286, loss_reward=0, loss_trust_region=0.022, loss_lstm=1.1e-5][A
+Training world model:   5% 1600/30000 [05:57<1:39:06,  4.78it/s, loss=0.0352, loss_reconstruct=0.00375, loss_value=0.0255, loss_reward=0, loss_trust_region=0.00592, loss_lstm=1.16e-5][A
+Training world model:   6% 1700/30000 [05:57<1:38:42,  4.78it/s, loss=0.0352, loss_reconstruct=0.00375, loss_value=0.0255, loss_reward=0, loss_trust_region=0.00592, loss_lstm=1.16e-5][A
+Training world model:   6% 1700/30000 [06:18<1:38:42,  4.78it/s, loss=0.0249, loss_reconstruct=0.0025, loss_value=0.0216, loss_reward=0, loss_trust_region=0.00078, loss_lstm=1.22e-5] [A
+Training world model:   6% 1800/30000 [06:18<1:38:20,  4.78it/s, loss=0.0249, loss_reconstruct=0.0025, loss_value=0.0216, loss_reward=0, loss_trust_region=0.00078, loss_lstm=1.22e-5][A
+Training world model:   6% 1800/30000 [06:39<1:38:20,  4.78it/s, loss=0.0212, loss_reconstruct=0.00293, loss_value=0.0178, loss_reward=0, loss_trust_region=0.00052, loss_lstm=1.17e-5][A
+Training world model:   6% 1900/30000 [06:39<1:38:00,  4.78it/s, loss=0.0212, loss_reconstruct=0.00293, loss_value=0.0178, loss_reward=0, loss_trust_region=0.00052, loss_lstm=1.17e-5][A
+Training world model:   6% 1900/30000 [07:00<1:38:00,  4.78it/s, loss=0.0218, loss_reconstruct=0.00456, loss_value=0.0168, loss_reward=0, loss_trust_region=0.000388, loss_lstm=1.23e-5][A
+Training world model:   7% 2000/30000 [07:00<1:37:47,  4.77it/s, loss=0.0218, loss_reconstruct=0.00456, loss_value=0.0168, loss_reward=0, loss_trust_region=0.000388, loss_lstm=1.23e-5][A
+Training world model:   7% 2000/30000 [07:21<1:37:47,  4.77it/s, loss=0.0233, loss_reconstruct=0.00224, loss_value=0.0207, loss_reward=0, loss_trust_region=0.000284, loss_lstm=1.29e-5][A
+Training world model:   7% 2100/30000 [07:21<1:37:26,  4.77it/s, loss=0.0233, loss_reconstruct=0.00224, loss_value=0.0207, loss_reward=0, loss_trust_region=0.000284, loss_lstm=1.29e-5][A
+Training world model:   7% 2100/30000 [07:42<1:37:26,  4.77it/s, loss=0.023, loss_reconstruct=0.00236, loss_value=0.0204, loss_reward=0, loss_trust_region=0.000199, loss_lstm=1.35e-5] [A
+Training world model:   7% 2200/30000 [07:42<1:37:03,  4.77it/s, loss=0.023, loss_reconstruct=0.00236, loss_value=0.0204, loss_reward=0, loss_trust_region=0.000199, loss_lstm=1.35e-5][A
+Training world model:   7% 2200/30000 [08:03<1:37:03,  4.77it/s, loss=0.0233, loss_reconstruct=0.00313, loss_value=0.02, loss_reward=0, loss_trust_region=0.000147, loss_lstm=1.28e-5] [A
+Training world model:   8% 2300/30000 [08:03<1:36:38,  4.78it/s, loss=0.0233, loss_reconstruct=0.00313, loss_value=0.02, loss_reward=0, loss_trust_region=0.000147, loss_lstm=1.28e-5][A
+Training world model:   8% 2300/30000 [08:23<1:36:38,  4.78it/s, loss=0.0189, loss_reconstruct=0.00242, loss_value=0.0161, loss_reward=0, loss_trust_region=0.000381, loss_lstm=1.32e-5][A
+Training world model:   8% 2400/30000 [08:23<1:36:13,  4.78it/s, loss=0.0189, loss_reconstruct=0.00242, loss_value=0.0161, loss_reward=0, loss_trust_region=0.000381, loss_lstm=1.32e-5][A
+Training world model:   8% 2400/30000 [08:44<1:36:13,  4.78it/s, loss=0.02, loss_reconstruct=0.004, loss_value=0.0159, loss_reward=0, loss_trust_region=0.000102, loss_lstm=1.26e-5]    [A
+Training world model:   8% 2500/30000 [08:44<1:35:53,  4.78it/s, loss=0.02, loss_reconstruct=0.004, loss_value=0.0159, loss_reward=0, loss_trust_region=0.000102, loss_lstm=1.26e-5][A
+Training world model:   8% 2500/30000 [09:05<1:35:53,  4.78it/s, loss=0.0148, loss_reconstruct=0.00203, loss_value=0.0127, loss_reward=0, loss_trust_region=8.33e-5, loss_lstm=1.37e-5][A
+Training world model:   9% 2600/30000 [09:05<1:35:29,  4.78it/s, loss=0.0148, loss_reconstruct=0.00203, loss_value=0.0127, loss_reward=0, loss_trust_region=8.33e-5, loss_lstm=1.37e-5][A
+Training world model:   9% 2600/30000 [09:26<1:35:29,  4.78it/s, loss=0.014, loss_reconstruct=0.00163, loss_value=0.0123, loss_reward=0, loss_trust_region=7.09e-5, loss_lstm=1.46e-5] [A
+Training world model:   9% 2700/30000 [09:26<1:34:57,  4.79it/s, loss=0.014, loss_reconstruct=0.00163, loss_value=0.0123, loss_reward=0, loss_trust_region=7.09e-5, loss_lstm=1.46e-5][A
+Training world model:   9% 2700/30000 [09:47<1:34:57,  4.79it/s, loss=0.0143, loss_reconstruct=0.003, loss_value=0.0112, loss_reward=0, loss_trust_region=6.14e-5, loss_lstm=1.36e-5] [A
+Training world model:   9% 2800/30000 [09:47<1:34:32,  4.80it/s, loss=0.0143, loss_reconstruct=0.003, loss_value=0.0112, loss_reward=0, loss_trust_region=6.14e-5, loss_lstm=1.36e-5][A
+Training world model:   9% 2800/30000 [10:08<1:34:32,  4.80it/s, loss=0.0129, loss_reconstruct=0.00171, loss_value=0.0111, loss_reward=0, loss_trust_region=6.51e-5, loss_lstm=1.42e-5][A
+Training world model:  10% 2900/30000 [10:08<1:34:10,  4.80it/s, loss=0.0129, loss_reconstruct=0.00171, loss_value=0.0111, loss_reward=0, loss_trust_region=6.51e-5, loss_lstm=1.42e-5][A
+Training world model:  10% 2900/30000 [10:29<1:34:10,  4.80it/s, loss=0.0122, loss_reconstruct=0.00149, loss_value=0.0106, loss_reward=0, loss_trust_region=4.72e-5, loss_lstm=1.46e-5][A
+Training world model:  10% 3000/30000 [10:29<1:34:02,  4.78it/s, loss=0.0122, loss_reconstruct=0.00149, loss_value=0.0106, loss_reward=0, loss_trust_region=4.72e-5, loss_lstm=1.46e-5][A
+Training world model:  10% 3000/30000 [10:50<1:34:02,  4.78it/s, loss=0.0114, loss_reconstruct=0.00125, loss_value=0.0101, loss_reward=0, loss_trust_region=4.11e-5, loss_lstm=1.56e-5][A
+Training world model:  10% 3100/30000 [10:50<1:33:37,  4.79it/s, loss=0.0114, loss_reconstruct=0.00125, loss_value=0.0101, loss_reward=0, loss_trust_region=4.11e-5, loss_lstm=1.56e-5][A
+Training world model:  10% 3100/30000 [11:10<1:33:37,  4.79it/s, loss=0.0117, loss_reconstruct=0.00143, loss_value=0.01, loss_reward=0, loss_trust_region=0.000244, loss_lstm=1.63e-5] [A
+Training world model:  11% 3200/30000 [11:10<1:33:20,  4.79it/s, loss=0.0117, loss_reconstruct=0.00143, loss_value=0.01, loss_reward=0, loss_trust_region=0.000244, loss_lstm=1.63e-5][A
+Training world model:  11% 3200/30000 [11:31<1:33:20,  4.79it/s, loss=0.0126, loss_reconstruct=0.00267, loss_value=0.00986, loss_reward=0, loss_trust_region=4.58e-5, loss_lstm=1.43e-5][A
+Training world model:  11% 3300/30000 [11:31<1:33:01,  4.78it/s, loss=0.0126, loss_reconstruct=0.00267, loss_value=0.00986, loss_reward=0, loss_trust_region=4.58e-5, loss_lstm=1.43e-5][A
+Training world model:  11% 3300/30000 [11:52<1:33:01,  4.78it/s, loss=0.0117, loss_reconstruct=0.00263, loss_value=0.00893, loss_reward=0, loss_trust_region=0.000161, loss_lstm=1.49e-5][A
+Training world model:  11% 3400/30000 [11:52<1:32:47,  4.78it/s, loss=0.0117, loss_reconstruct=0.00263, loss_value=0.00893, loss_reward=0, loss_trust_region=0.000161, loss_lstm=1.49e-5][A
+Training world model:  11% 3400/30000 [12:13<1:32:47,  4.78it/s, loss=0.0104, loss_reconstruct=0.00174, loss_value=0.00866, loss_reward=0, loss_trust_region=3.13e-5, loss_lstm=1.48e-5] [A
+Training world model:  12% 3500/30000 [12:13<1:32:22,  4.78it/s, loss=0.0104, loss_reconstruct=0.00174, loss_value=0.00866, loss_reward=0, loss_trust_region=3.13e-5, loss_lstm=1.48e-5][A
+Training world model:  12% 3500/30000 [12:34<1:32:22,  4.78it/s, loss=0.0132, loss_reconstruct=0.00137, loss_value=0.00904, loss_reward=0, loss_trust_region=0.00277, loss_lstm=1.53e-5][A
+Training world model:  12% 3600/30000 [12:34<1:31:51,  4.79it/s, loss=0.0132, loss_reconstruct=0.00137, loss_value=0.00904, loss_reward=0, loss_trust_region=0.00277, loss_lstm=1.53e-5][A
+Training world model:  12% 3600/30000 [12:55<1:31:51,  4.79it/s, loss=0.0113, loss_reconstruct=0.00127, loss_value=0.00935, loss_reward=0, loss_trust_region=0.000708, loss_lstm=1.54e-5][A
+Training world model:  12% 3700/30000 [12:55<1:31:28,  4.79it/s, loss=0.0113, loss_reconstruct=0.00127, loss_value=0.00935, loss_reward=0, loss_trust_region=0.000708, loss_lstm=1.54e-5][A
+Training world model:  12% 3700/30000 [13:16<1:31:28,  4.79it/s, loss=0.0116, loss_reconstruct=0.00276, loss_value=0.00875, loss_reward=0, loss_trust_region=5.54e-5, loss_lstm=1.56e-5] [A
+Training world model:  13% 3800/30000 [13:16<1:31:13,  4.79it/s, loss=0.0116, loss_reconstruct=0.00276, loss_value=0.00875, loss_reward=0, loss_trust_region=5.54e-5, loss_lstm=1.56e-5][A
+Training world model:  13% 3800/30000 [13:37<1:31:13,  4.79it/s, loss=0.0103, loss_reconstruct=0.000858, loss_value=0.00792, loss_reward=0, loss_trust_region=0.00148, loss_lstm=1.65e-5][A
+Training world model:  13% 3900/30000 [13:37<1:30:59,  4.78it/s, loss=0.0103, loss_reconstruct=0.000858, loss_value=0.00792, loss_reward=0, loss_trust_region=0.00148, loss_lstm=1.65e-5][A
+Training world model:  13% 3900/30000 [13:58<1:30:59,  4.78it/s, loss=0.00915, loss_reconstruct=0.00108, loss_value=0.00801, loss_reward=0, loss_trust_region=3.95e-5, loss_lstm=1.67e-5][A
+Training world model:  13% 4000/30000 [13:58<1:30:42,  4.78it/s, loss=0.00915, loss_reconstruct=0.00108, loss_value=0.00801, loss_reward=0, loss_trust_region=3.95e-5, loss_lstm=1.67e-5][A
+Training world model:  13% 4000/30000 [14:19<1:30:42,  4.78it/s, loss=0.008, loss_reconstruct=0.000955, loss_value=0.007, loss_reward=0, loss_trust_region=2.74e-5, loss_lstm=1.74e-5]   [A
+Training world model:  14% 4100/30000 [14:19<1:30:18,  4.78it/s, loss=0.008, loss_reconstruct=0.000955, loss_value=0.007, loss_reward=0, loss_trust_region=2.74e-5, loss_lstm=1.74e-5][A
+Training world model:  14% 4100/30000 [14:40<1:30:18,  4.78it/s, loss=0.00793, loss_reconstruct=0.00115, loss_value=0.00675, loss_reward=0, loss_trust_region=2.13e-5, loss_lstm=1.65e-5][A
+Training world model:  14% 4200/30000 [14:40<1:29:57,  4.78it/s, loss=0.00793, loss_reconstruct=0.00115, loss_value=0.00675, loss_reward=0, loss_trust_region=2.13e-5, loss_lstm=1.65e-5][A
+Training world model:  14% 4200/30000 [15:01<1:29:57,  4.78it/s, loss=0.0079, loss_reconstruct=0.000947, loss_value=0.00692, loss_reward=0, loss_trust_region=1.71e-5, loss_lstm=1.72e-5][A
+Training world model:  14% 4300/30000 [15:01<1:29:38,  4.78it/s, loss=0.0079, loss_reconstruct=0.000947, loss_value=0.00692, loss_reward=0, loss_trust_region=1.71e-5, loss_lstm=1.72e-5][A
+Training world model:  14% 4300/30000 [15:21<1:29:38,  4.78it/s, loss=0.0091, loss_reconstruct=0.00115, loss_value=0.00791, loss_reward=0, loss_trust_region=1.44e-5, loss_lstm=1.7e-5]  [A
+Training world model:  15% 4400/30000 [15:21<1:29:14,  4.78it/s, loss=0.0091, loss_reconstruct=0.00115, loss_value=0.00791, loss_reward=0, loss_trust_region=1.44e-5, loss_lstm=1.7e-5][A
+Training world model:  15% 4400/30000 [15:42<1:29:14,  4.78it/s, loss=0.00899, loss_reconstruct=0.00119, loss_value=0.00776, loss_reward=0, loss_trust_region=1.19e-5, loss_lstm=1.73e-5][A
+Training world model:  15% 4500/30000 [15:42<1:28:52,  4.78it/s, loss=0.00899, loss_reconstruct=0.00119, loss_value=0.00776, loss_reward=0, loss_trust_region=1.19e-5, loss_lstm=1.73e-5][A
+Training world model:  15% 4500/30000 [16:03<1:28:52,  4.78it/s, loss=0.0084, loss_reconstruct=0.00103, loss_value=0.00735, loss_reward=0, loss_trust_region=9.9e-6, loss_lstm=1.72e-5]  [A
+Training world model:  15% 4600/30000 [16:03<1:28:29,  4.78it/s, loss=0.0084, loss_reconstruct=0.00103, loss_value=0.00735, loss_reward=0, loss_trust_region=9.9e-6, loss_lstm=1.72e-5][A
+Training world model:  15% 4600/30000 [16:24<1:28:29,  4.78it/s, loss=0.008, loss_reconstruct=0.000927, loss_value=0.00705, loss_reward=0, loss_trust_region=8.67e-6, loss_lstm=1.74e-5][A
+Training world model:  16% 4700/30000 [16:24<1:28:13,  4.78it/s, loss=0.008, loss_reconstruct=0.000927, loss_value=0.00705, loss_reward=0, loss_trust_region=8.67e-6, loss_lstm=1.74e-5][A
+Training world model:  16% 4700/30000 [16:45<1:28:13,  4.78it/s, loss=0.00923, loss_reconstruct=0.0011, loss_value=0.0081, loss_reward=0, loss_trust_region=7.58e-6, loss_lstm=1.76e-5] [A
+Training world model:  16% 4800/30000 [16:45<1:27:48,  4.78it/s, loss=0.00923, loss_reconstruct=0.0011, loss_value=0.0081, loss_reward=0, loss_trust_region=7.58e-6, loss_lstm=1.76e-5][A
+Training world model:  16% 4800/30000 [17:06<1:27:48,  4.78it/s, loss=0.00682, loss_reconstruct=0.000621, loss_value=0.00617, loss_reward=0, loss_trust_region=6.49e-6, loss_lstm=1.95e-5][A
+Training world model:  16% 4900/30000 [17:06<1:27:24,  4.79it/s, loss=0.00682, loss_reconstruct=0.000621, loss_value=0.00617, loss_reward=0, loss_trust_region=6.49e-6, loss_lstm=1.95e-5][A
+Training world model:  16% 4900/30000 [17:27<1:27:24,  4.79it/s, loss=0.00662, loss_reconstruct=0.00116, loss_value=0.00544, loss_reward=0, loss_trust_region=5.84e-6, loss_lstm=1.72e-5] [A
+Training world model:  17% 5000/30000 [17:27<1:27:09,  4.78it/s, loss=0.00662, loss_reconstruct=0.00116, loss_value=0.00544, loss_reward=0, loss_trust_region=5.84e-6, loss_lstm=1.72e-5][A
+Training world model:  17% 5000/30000 [17:48<1:27:09,  4.78it/s, loss=0.00608, loss_reconstruct=0.000774, loss_value=0.00528, loss_reward=0, loss_trust_region=5.34e-6, loss_lstm=1.75e-5][A
+Training world model:  17% 5100/30000 [17:48<1:26:55,  4.77it/s, loss=0.00608, loss_reconstruct=0.000774, loss_value=0.00528, loss_reward=0, loss_trust_region=5.34e-6, loss_lstm=1.75e-5][A
+Training world model:  17% 5100/30000 [18:09<1:26:55,  4.77it/s, loss=0.00649, loss_reconstruct=0.00102, loss_value=0.00545, loss_reward=0, loss_trust_region=4.87e-6, loss_lstm=1.76e-5] [A
+Training world model:  17% 5200/30000 [18:09<1:26:33,  4.77it/s, loss=0.00649, loss_reconstruct=0.00102, loss_value=0.00545, loss_reward=0, loss_trust_region=4.87e-6, loss_lstm=1.76e-5][A
+Training world model:  17% 5200/30000 [18:30<1:26:33,  4.77it/s, loss=0.00741, loss_reconstruct=0.00164, loss_value=0.00575, loss_reward=0, loss_trust_region=4.38e-6, loss_lstm=1.82e-5][A
+Training world model:  18% 5300/30000 [18:30<1:26:13,  4.77it/s, loss=0.00741, loss_reconstruct=0.00164, loss_value=0.00575, loss_reward=0, loss_trust_region=4.38e-6, loss_lstm=1.82e-5][A
+Training world model:  18% 5300/30000 [18:51<1:26:13,  4.77it/s, loss=0.00804, loss_reconstruct=0.00293, loss_value=0.0051, loss_reward=0, loss_trust_region=3.97e-6, loss_lstm=1.54e-5] [A
+Training world model:  18% 5400/30000 [18:51<1:25:45,  4.78it/s, loss=0.00804, loss_reconstruct=0.00293, loss_value=0.0051, loss_reward=0, loss_trust_region=3.97e-6, loss_lstm=1.54e-5][A
+Training world model:  18% 5400/30000 [19:11<1:25:45,  4.78it/s, loss=0.00588, loss_reconstruct=0.000514, loss_value=0.00534, loss_reward=0, loss_trust_region=3.63e-6, loss_lstm=1.81e-5][A
+Training world model:  18% 5500/30000 [19:11<1:25:18,  4.79it/s, loss=0.00588, loss_reconstruct=0.000514, loss_value=0.00534, loss_reward=0, loss_trust_region=3.63e-6, loss_lstm=1.81e-5][A
+Training world model:  18% 5500/30000 [19:32<1:25:18,  4.79it/s, loss=0.00644, loss_reconstruct=0.00137, loss_value=0.00504, loss_reward=0, loss_trust_region=3.17e-6, loss_lstm=1.75e-5] [A
+Training world model:  19% 5600/30000 [19:32<1:24:56,  4.79it/s, loss=0.00644, loss_reconstruct=0.00137, loss_value=0.00504, loss_reward=0, loss_trust_region=3.17e-6, loss_lstm=1.75e-5][A
+Training world model:  19% 5600/30000 [19:53<1:24:56,  4.79it/s, loss=0.00524, loss_reconstruct=0.000962, loss_value=0.00426, loss_reward=0, loss_trust_region=2.94e-6, loss_lstm=1.64e-5][A
+Training world model:  19% 5700/30000 [19:53<1:24:39,  4.78it/s, loss=0.00524, loss_reconstruct=0.000962, loss_value=0.00426, loss_reward=0, loss_trust_region=2.94e-6, loss_lstm=1.64e-5][A
+Training world model:  19% 5700/30000 [20:14<1:24:39,  4.78it/s, loss=0.00503, loss_reconstruct=0.00087, loss_value=0.00414, loss_reward=0, loss_trust_region=2.75e-6, loss_lstm=1.7e-5]  [A
+Training world model:  19% 5800/30000 [20:14<1:24:16,  4.79it/s, loss=0.00503, loss_reconstruct=0.00087, loss_value=0.00414, loss_reward=0, loss_trust_region=2.75e-6, loss_lstm=1.7e-5][A
+Training world model:  19% 5800/30000 [20:35<1:24:16,  4.79it/s, loss=0.0061, loss_reconstruct=0.00225, loss_value=0.00383, loss_reward=0, loss_trust_region=2.52e-6, loss_lstm=1.69e-5][A
+Training world model:  20% 5900/30000 [20:35<1:23:57,  4.78it/s, loss=0.0061, loss_reconstruct=0.00225, loss_value=0.00383, loss_reward=0, loss_trust_region=2.52e-6, loss_lstm=1.69e-5][A
+Training world model:  20% 5900/30000 [20:56<1:23:57,  4.78it/s, loss=0.00503, loss_reconstruct=0.00134, loss_value=0.00367, loss_reward=0, loss_trust_region=2.3e-6, loss_lstm=1.81e-5][A
+Training world model:  20% 6000/30000 [20:56<1:23:48,  4.77it/s, loss=0.00503, loss_reconstruct=0.00134, loss_value=0.00367, loss_reward=0, loss_trust_region=2.3e-6, loss_lstm=1.81e-5][A
+Training world model:  20% 6000/30000 [21:17<1:23:48,  4.77it/s, loss=0.00439, loss_reconstruct=0.000952, loss_value=0.00325, loss_reward=0, loss_trust_region=0.000172, loss_lstm=1.73e-5][A
+Training world model:  20% 6100/30000 [21:17<1:23:23,  4.78it/s, loss=0.00439, loss_reconstruct=0.000952, loss_value=0.00325, loss_reward=0, loss_trust_region=0.000172, loss_lstm=1.73e-5][A
+Training world model:  20% 6100/30000 [21:38<1:23:23,  4.78it/s, loss=0.0107, loss_reconstruct=0.0012, loss_value=0.00448, loss_reward=0, loss_trust_region=0.00498, loss_lstm=1.79e-5]    [A
+Training world model:  21% 6200/30000 [21:38<1:23:00,  4.78it/s, loss=0.0107, loss_reconstruct=0.0012, loss_value=0.00448, loss_reward=0, loss_trust_region=0.00498, loss_lstm=1.79e-5][A
+Training world model:  21% 6200/30000 [21:59<1:23:00,  4.78it/s, loss=0.00536, loss_reconstruct=0.00109, loss_value=0.00412, loss_reward=0, loss_trust_region=0.00013, loss_lstm=1.79e-5][A
+Training world model:  21% 6300/30000 [21:59<1:22:38,  4.78it/s, loss=0.00536, loss_reconstruct=0.00109, loss_value=0.00412, loss_reward=0, loss_trust_region=0.00013, loss_lstm=1.79e-5][A
+Training world model:  21% 6300/30000 [22:20<1:22:38,  4.78it/s, loss=0.00353, loss_reconstruct=0.000734, loss_value=0.00273, loss_reward=0, loss_trust_region=4.93e-5, loss_lstm=1.8e-5][A
+Training world model:  21% 6400/30000 [22:20<1:22:16,  4.78it/s, loss=0.00353, loss_reconstruct=0.000734, loss_value=0.00273, loss_reward=0, loss_trust_region=4.93e-5, loss_lstm=1.8e-5][A
+Training world model:  21% 6400/30000 [22:41<1:22:16,  4.78it/s, loss=0.00467, loss_reconstruct=0.000706, loss_value=0.00327, loss_reward=0, loss_trust_region=0.000669, loss_lstm=1.83e-5][A
+Training world model:  22% 6500/30000 [22:41<1:21:46,  4.79it/s, loss=0.00467, loss_reconstruct=0.000706, loss_value=0.00327, loss_reward=0, loss_trust_region=0.000669, loss_lstm=1.83e-5][A
+Training world model:  22% 6500/30000 [23:01<1:21:46,  4.79it/s, loss=0.00462, loss_reconstruct=0.000621, loss_value=0.00339, loss_reward=0, loss_trust_region=0.000598, loss_lstm=1.87e-5][A
+Training world model:  22% 6600/30000 [23:01<1:21:27,  4.79it/s, loss=0.00462, loss_reconstruct=0.000621, loss_value=0.00339, loss_reward=0, loss_trust_region=0.000598, loss_lstm=1.87e-5][A
+Training world model:  22% 6600/30000 [23:22<1:21:27,  4.79it/s, loss=0.005, loss_reconstruct=0.00155, loss_value=0.00338, loss_reward=0, loss_trust_region=4.83e-5, loss_lstm=1.9e-5]     [A
+Training world model:  22% 6700/30000 [23:22<1:21:05,  4.79it/s, loss=0.005, loss_reconstruct=0.00155, loss_value=0.00338, loss_reward=0, loss_trust_region=4.83e-5, loss_lstm=1.9e-5][A
+Training world model:  22% 6700/30000 [23:43<1:21:05,  4.79it/s, loss=0.00465, loss_reconstruct=0.00152, loss_value=0.00309, loss_reward=0, loss_trust_region=2.75e-5, loss_lstm=1.76e-5][A
+Training world model:  23% 6800/30000 [23:43<1:20:37,  4.80it/s, loss=0.00465, loss_reconstruct=0.00152, loss_value=0.00309, loss_reward=0, loss_trust_region=2.75e-5, loss_lstm=1.76e-5][A
+Training world model:  23% 6800/30000 [24:04<1:20:37,  4.80it/s, loss=0.00469, loss_reconstruct=0.00156, loss_value=0.0031, loss_reward=0, loss_trust_region=2.01e-5, loss_lstm=1.77e-5] [A
+Training world model:  23% 6900/30000 [24:04<1:20:13,  4.80it/s, loss=0.00469, loss_reconstruct=0.00156, loss_value=0.0031, loss_reward=0, loss_trust_region=2.01e-5, loss_lstm=1.77e-5][A
+Training world model:  23% 6900/30000 [24:25<1:20:13,  4.80it/s, loss=0.00542, loss_reconstruct=0.00103, loss_value=0.00371, loss_reward=0, loss_trust_region=0.000667, loss_lstm=1.7e-5][A
+Training world model:  23% 7000/30000 [24:25<1:20:08,  4.78it/s, loss=0.00542, loss_reconstruct=0.00103, loss_value=0.00371, loss_reward=0, loss_trust_region=0.000667, loss_lstm=1.7e-5][A
+Training world model:  23% 7000/30000 [24:46<1:20:08,  4.78it/s, loss=0.00326, loss_reconstruct=0.000587, loss_value=0.00256, loss_reward=0, loss_trust_region=9.04e-5, loss_lstm=1.82e-5][A
+Training world model:  24% 7100/30000 [24:46<1:19:52,  4.78it/s, loss=0.00326, loss_reconstruct=0.000587, loss_value=0.00256, loss_reward=0, loss_trust_region=9.04e-5, loss_lstm=1.82e-5][A
+Training world model:  24% 7100/30000 [25:07<1:19:52,  4.78it/s, loss=0.00463, loss_reconstruct=0.000761, loss_value=0.00381, loss_reward=0, loss_trust_region=3.39e-5, loss_lstm=1.79e-5][A
+Training world model:  24% 7200/30000 [25:07<1:19:14,  4.80it/s, loss=0.00463, loss_reconstruct=0.000761, loss_value=0.00381, loss_reward=0, loss_trust_region=3.39e-5, loss_lstm=1.79e-5][A
+Training world model:  24% 7200/30000 [25:28<1:19:14,  4.80it/s, loss=0.0036, loss_reconstruct=0.000644, loss_value=0.00292, loss_reward=0, loss_trust_region=2.32e-5, loss_lstm=1.9e-5]  [A
+Training world model:  24% 7300/30000 [25:28<1:18:55,  4.79it/s, loss=0.0036, loss_reconstruct=0.000644, loss_value=0.00292, loss_reward=0, loss_trust_region=2.32e-5, loss_lstm=1.9e-5][A
+Training world model:  24% 7300/30000 [25:48<1:18:55,  4.79it/s, loss=0.00402, loss_reconstruct=0.00121, loss_value=0.00277, loss_reward=0, loss_trust_region=1.76e-5, loss_lstm=1.69e-5][A
+Training world model:  25% 7400/30000 [25:48<1:18:28,  4.80it/s, loss=0.00402, loss_reconstruct=0.00121, loss_value=0.00277, loss_reward=0, loss_trust_region=1.76e-5, loss_lstm=1.69e-5][A
+Training world model:  25% 7400/30000 [26:09<1:18:28,  4.80it/s, loss=0.00397, loss_reconstruct=0.00136, loss_value=0.00258, loss_reward=0, loss_trust_region=1.42e-5, loss_lstm=1.73e-5][A
+Training world model:  25% 7500/30000 [26:09<1:18:09,  4.80it/s, loss=0.00397, loss_reconstruct=0.00136, loss_value=0.00258, loss_reward=0, loss_trust_region=1.42e-5, loss_lstm=1.73e-5][A
+Training world model:  25% 7500/30000 [26:30<1:18:09,  4.80it/s, loss=0.00339, loss_reconstruct=0.000832, loss_value=0.00253, loss_reward=0, loss_trust_region=1.17e-5, loss_lstm=1.84e-5][A
+Training world model:  25% 7600/30000 [26:30<1:17:53,  4.79it/s, loss=0.00339, loss_reconstruct=0.000832, loss_value=0.00253, loss_reward=0, loss_trust_region=1.17e-5, loss_lstm=1.84e-5][A
+Training world model:  25% 7600/30000 [26:51<1:17:53,  4.79it/s, loss=0.00318, loss_reconstruct=0.000832, loss_value=0.00232, loss_reward=0, loss_trust_region=1.05e-5, loss_lstm=1.83e-5][A
+Training world model:  26% 7700/30000 [26:51<1:17:34,  4.79it/s, loss=0.00318, loss_reconstruct=0.000832, loss_value=0.00232, loss_reward=0, loss_trust_region=1.05e-5, loss_lstm=1.83e-5][A
+Training world model:  26% 7700/30000 [27:12<1:17:34,  4.79it/s, loss=0.00323, loss_reconstruct=0.000673, loss_value=0.00253, loss_reward=0, loss_trust_region=8.7e-6, loss_lstm=1.86e-5] [A
+Training world model:  26% 7800/30000 [27:12<1:17:17,  4.79it/s, loss=0.00323, loss_reconstruct=0.000673, loss_value=0.00253, loss_reward=0, loss_trust_region=8.7e-6, loss_lstm=1.86e-5][A
+Training world model:  26% 7800/30000 [27:33<1:17:17,  4.79it/s, loss=0.00296, loss_reconstruct=0.000386, loss_value=0.00254, loss_reward=0, loss_trust_region=7.64e-6, loss_lstm=1.95e-5][A
+Training world model:  26% 7900/30000 [27:33<1:16:55,  4.79it/s, loss=0.00296, loss_reconstruct=0.000386, loss_value=0.00254, loss_reward=0, loss_trust_region=7.64e-6, loss_lstm=1.95e-5][A
+Training world model:  26% 7900/30000 [27:54<1:16:55,  4.79it/s, loss=0.00258, loss_reconstruct=0.000801, loss_value=0.00175, loss_reward=0, loss_trust_region=6.94e-6, loss_lstm=1.93e-5][A
+Training world model:  27% 8000/30000 [27:54<1:16:42,  4.78it/s, loss=0.00258, loss_reconstruct=0.000801, loss_value=0.00175, loss_reward=0, loss_trust_region=6.94e-6, loss_lstm=1.93e-5][A
+Training world model:  27% 8000/30000 [28:15<1:16:42,  4.78it/s, loss=0.00296, loss_reconstruct=0.000721, loss_value=0.00222, loss_reward=0, loss_trust_region=6.84e-6, loss_lstm=1.89e-5][A
+Training world model:  27% 8100/30000 [28:15<1:16:20,  4.78it/s, loss=0.00296, loss_reconstruct=0.000721, loss_value=0.00222, loss_reward=0, loss_trust_region=6.84e-6, loss_lstm=1.89e-5][A
+Training world model:  27% 8100/30000 [28:36<1:16:20,  4.78it/s, loss=0.00276, loss_reconstruct=0.000882, loss_value=0.00185, loss_reward=0, loss_trust_region=5.44e-6, loss_lstm=1.91e-5][A
+Training world model:  27% 8200/30000 [28:36<1:15:55,  4.79it/s, loss=0.00276, loss_reconstruct=0.000882, loss_value=0.00185, loss_reward=0, loss_trust_region=5.44e-6, loss_lstm=1.91e-5][A
+Training world model:  27% 8200/30000 [28:56<1:15:55,  4.79it/s, loss=0.0024, loss_reconstruct=0.000657, loss_value=0.00171, loss_reward=0, loss_trust_region=5.13e-6, loss_lstm=2.03e-5] [A
+Training world model:  28% 8300/30000 [28:56<1:15:31,  4.79it/s, loss=0.0024, loss_reconstruct=0.000657, loss_value=0.00171, loss_reward=0, loss_trust_region=5.13e-6, loss_lstm=2.03e-5][A
+Training world model:  28% 8300/30000 [29:17<1:15:31,  4.79it/s, loss=0.00232, loss_reconstruct=0.000501, loss_value=0.00179, loss_reward=0, loss_trust_region=4.61e-6, loss_lstm=1.93e-5][A
+Training world model:  28% 8400/30000 [29:17<1:15:12,  4.79it/s, loss=0.00232, loss_reconstruct=0.000501, loss_value=0.00179, loss_reward=0, loss_trust_region=4.61e-6, loss_lstm=1.93e-5][A
+Training world model:  28% 8400/30000 [29:38<1:15:12,  4.79it/s, loss=0.0028, loss_reconstruct=0.000873, loss_value=0.0019, loss_reward=0, loss_trust_region=4.47e-6, loss_lstm=1.84e-5]  [A
+Training world model:  28% 8500/30000 [29:38<1:14:51,  4.79it/s, loss=0.0028, loss_reconstruct=0.000873, loss_value=0.0019, loss_reward=0, loss_trust_region=4.47e-6, loss_lstm=1.84e-5][A
+Training world model:  28% 8500/30000 [29:59<1:14:51,  4.79it/s, loss=0.0024, loss_reconstruct=0.000694, loss_value=0.00168, loss_reward=0, loss_trust_region=3.99e-6, loss_lstm=1.81e-5][A
+Training world model:  29% 8600/30000 [29:59<1:14:34,  4.78it/s, loss=0.0024, loss_reconstruct=0.000694, loss_value=0.00168, loss_reward=0, loss_trust_region=3.99e-6, loss_lstm=1.81e-5][A
+Training world model:  29% 8600/30000 [30:20<1:14:34,  4.78it/s, loss=0.00283, loss_reconstruct=0.00101, loss_value=0.00181, loss_reward=0, loss_trust_region=3.6e-6, loss_lstm=1.8e-5]  [A
+Training world model:  29% 8700/30000 [30:20<1:14:13,  4.78it/s, loss=0.00283, loss_reconstruct=0.00101, loss_value=0.00181, loss_reward=0, loss_trust_region=3.6e-6, loss_lstm=1.8e-5][A
+Training world model:  29% 8700/30000 [30:41<1:14:13,  4.78it/s, loss=0.00208, loss_reconstruct=0.000571, loss_value=0.00149, loss_reward=0, loss_trust_region=3.37e-6, loss_lstm=1.91e-5][A
+Training world model:  29% 8800/30000 [30:41<1:13:49,  4.79it/s, loss=0.00208, loss_reconstruct=0.000571, loss_value=0.00149, loss_reward=0, loss_trust_region=3.37e-6, loss_lstm=1.91e-5][A
+Training world model:  29% 8800/30000 [31:02<1:13:49,  4.79it/s, loss=0.00224, loss_reconstruct=0.000558, loss_value=0.00166, loss_reward=0, loss_trust_region=3.05e-6, loss_lstm=1.83e-5][A
+Training world model:  30% 8900/30000 [31:02<1:13:31,  4.78it/s, loss=0.00224, loss_reconstruct=0.000558, loss_value=0.00166, loss_reward=0, loss_trust_region=3.05e-6, loss_lstm=1.83e-5][A
+Training world model:  30% 8900/30000 [31:23<1:13:31,  4.78it/s, loss=0.00257, loss_reconstruct=0.000972, loss_value=0.00157, loss_reward=0, loss_trust_region=2.96e-6, loss_lstm=1.92e-5][A
+Training world model:  30% 9000/30000 [31:23<1:13:13,  4.78it/s, loss=0.00257, loss_reconstruct=0.000972, loss_value=0.00157, loss_reward=0, loss_trust_region=2.96e-6, loss_lstm=1.92e-5][A
+Training world model:  30% 9000/30000 [31:44<1:13:13,  4.78it/s, loss=0.00215, loss_reconstruct=0.000771, loss_value=0.00136, loss_reward=0, loss_trust_region=2.73e-6, loss_lstm=1.79e-5][A
+Training world model:  30% 9100/30000 [31:44<1:12:53,  4.78it/s, loss=0.00215, loss_reconstruct=0.000771, loss_value=0.00136, loss_reward=0, loss_trust_region=2.73e-6, loss_lstm=1.79e-5][A
+Training world model:  30% 9100/30000 [32:05<1:12:53,  4.78it/s, loss=0.00207, loss_reconstruct=0.000665, loss_value=0.00139, loss_reward=0, loss_trust_region=2.53e-6, loss_lstm=1.85e-5][A
+Training world model:  31% 9200/30000 [32:05<1:12:33,  4.78it/s, loss=0.00207, loss_reconstruct=0.000665, loss_value=0.00139, loss_reward=0, loss_trust_region=2.53e-6, loss_lstm=1.85e-5][A
+Training world model:  31% 9200/30000 [32:26<1:12:33,  4.78it/s, loss=0.00176, loss_reconstruct=0.000504, loss_value=0.00123, loss_reward=0, loss_trust_region=2.31e-6, loss_lstm=1.98e-5][A
+Training world model:  31% 9300/30000 [32:26<1:12:10,  4.78it/s, loss=0.00176, loss_reconstruct=0.000504, loss_value=0.00123, loss_reward=0, loss_trust_region=2.31e-6, loss_lstm=1.98e-5][A
+Training world model:  31% 9300/30000 [32:47<1:12:10,  4.78it/s, loss=0.00283, loss_reconstruct=0.000633, loss_value=0.00154, loss_reward=0, loss_trust_region=0.000644, loss_lstm=1.87e-5][A
+Training world model:  31% 9400/30000 [32:47<1:11:53,  4.78it/s, loss=0.00283, loss_reconstruct=0.000633, loss_value=0.00154, loss_reward=0, loss_trust_region=0.000644, loss_lstm=1.87e-5][A
+Training world model:  31% 9400/30000 [33:07<1:11:53,  4.78it/s, loss=0.00202, loss_reconstruct=0.000832, loss_value=0.00116, loss_reward=0, loss_trust_region=4.39e-6, loss_lstm=1.92e-5] [A
+Training world model:  32% 9500/30000 [33:07<1:11:31,  4.78it/s, loss=0.00202, loss_reconstruct=0.000832, loss_value=0.00116, loss_reward=0, loss_trust_region=4.39e-6, loss_lstm=1.92e-5][A
+Training world model:  32% 9500/30000 [33:28<1:11:31,  4.78it/s, loss=0.00219, loss_reconstruct=0.000857, loss_value=0.00131, loss_reward=0, loss_trust_region=3.14e-6, loss_lstm=1.91e-5][A
+Training world model:  32% 9600/30000 [33:28<1:11:03,  4.78it/s, loss=0.00219, loss_reconstruct=0.000857, loss_value=0.00131, loss_reward=0, loss_trust_region=3.14e-6, loss_lstm=1.91e-5][A
+Training world model:  32% 9600/30000 [33:49<1:11:03,  4.78it/s, loss=0.00177, loss_reconstruct=0.000613, loss_value=0.00113, loss_reward=0, loss_trust_region=2.54e-6, loss_lstm=1.98e-5][A
+Training world model:  32% 9700/30000 [33:49<1:10:43,  4.78it/s, loss=0.00177, loss_reconstruct=0.000613, loss_value=0.00113, loss_reward=0, loss_trust_region=2.54e-6, loss_lstm=1.98e-5][A
+Training world model:  32% 9700/30000 [34:10<1:10:43,  4.78it/s, loss=0.00151, loss_reconstruct=0.000401, loss_value=0.00109, loss_reward=0, loss_trust_region=2.22e-6, loss_lstm=2.05e-5][A
+Training world model:  33% 9800/30000 [34:10<1:10:24,  4.78it/s, loss=0.00151, loss_reconstruct=0.000401, loss_value=0.00109, loss_reward=0, loss_trust_region=2.22e-6, loss_lstm=2.05e-5][A
+Training world model:  33% 9800/30000 [34:31<1:10:24,  4.78it/s, loss=0.00188, loss_reconstruct=0.00072, loss_value=0.00114, loss_reward=0, loss_trust_region=1.98e-6, loss_lstm=1.84e-5] [A
+Training world model:  33% 9900/30000 [34:31<1:10:01,  4.78it/s, loss=0.00188, loss_reconstruct=0.00072, loss_value=0.00114, loss_reward=0, loss_trust_region=1.98e-6, loss_lstm=1.84e-5][A
+Training world model:  33% 9900/30000 [34:52<1:10:01,  4.78it/s, loss=0.00163, loss_reconstruct=0.000596, loss_value=0.00101, loss_reward=0, loss_trust_region=1.87e-6, loss_lstm=1.99e-5][A
+Training world model:  33% 10000/30000 [34:52<1:09:48,  4.77it/s, loss=0.00163, loss_reconstruct=0.000596, loss_value=0.00101, loss_reward=0, loss_trust_region=1.87e-6, loss_lstm=1.99e-5][A
+Training world model:  33% 10000/30000 [35:13<1:09:48,  4.77it/s, loss=0.0015, loss_reconstruct=0.000556, loss_value=0.000924, loss_reward=0, loss_trust_region=1.62e-6, loss_lstm=1.98e-5][A
+Training world model:  34% 10100/30000 [35:13<1:09:17,  4.79it/s, loss=0.0015, loss_reconstruct=0.000556, loss_value=0.000924, loss_reward=0, loss_trust_region=1.62e-6, loss_lstm=1.98e-5][A
+Training world model:  34% 10100/30000 [35:34<1:09:17,  4.79it/s, loss=0.00205, loss_reconstruct=0.00105, loss_value=0.000976, loss_reward=0, loss_trust_region=1.55e-6, loss_lstm=1.84e-5][A
+Training world model:  34% 10200/30000 [35:34<1:08:55,  4.79it/s, loss=0.00205, loss_reconstruct=0.00105, loss_value=0.000976, loss_reward=0, loss_trust_region=1.55e-6, loss_lstm=1.84e-5][A
+Training world model:  34% 10200/30000 [35:55<1:08:55,  4.79it/s, loss=0.00279, loss_reconstruct=0.00193, loss_value=0.00084, loss_reward=0, loss_trust_region=1.41e-6, loss_lstm=1.83e-5] [A
+Training world model:  34% 10300/30000 [35:55<1:08:38,  4.78it/s, loss=0.00279, loss_reconstruct=0.00193, loss_value=0.00084, loss_reward=0, loss_trust_region=1.41e-6, loss_lstm=1.83e-5][A
+Training world model:  34% 10300/30000 [36:15<1:08:38,  4.78it/s, loss=0.00141, loss_reconstruct=0.000576, loss_value=0.000815, loss_reward=0, loss_trust_region=1.3e-6, loss_lstm=1.98e-5][A
+Training world model:  35% 10400/30000 [36:15<1:08:14,  4.79it/s, loss=0.00141, loss_reconstruct=0.000576, loss_value=0.000815, loss_reward=0, loss_trust_region=1.3e-6, loss_lstm=1.98e-5][A
+Training world model:  35% 10400/30000 [36:36<1:08:14,  4.79it/s, loss=0.00231, loss_reconstruct=0.0015, loss_value=0.000786, loss_reward=0, loss_trust_region=1.26e-6, loss_lstm=1.91e-5] [A
+Training world model:  35% 10500/30000 [36:36<1:07:54,  4.79it/s, loss=0.00231, loss_reconstruct=0.0015, loss_value=0.000786, loss_reward=0, loss_trust_region=1.26e-6, loss_lstm=1.91e-5][A
+Training world model:  35% 10500/30000 [36:57<1:07:54,  4.79it/s, loss=0.00117, loss_reconstruct=0.000429, loss_value=0.000722, loss_reward=0, loss_trust_region=1.21e-6, loss_lstm=1.95e-5][A
+Training world model:  35% 10600/30000 [36:57<1:07:40,  4.78it/s, loss=0.00117, loss_reconstruct=0.000429, loss_value=0.000722, loss_reward=0, loss_trust_region=1.21e-6, loss_lstm=1.95e-5][A
